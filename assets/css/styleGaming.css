@@ -986,7 +986,7 @@
     position: absolute;
     bottom: 0;
     max-width: 100%;
-    animation: animate calc(2.5s * var(--i)) linear infinite;
+    animation: animate calc(2s * var(--i)) linear infinite;
   }
 
   @keyframes animate {
@@ -2202,6 +2202,20 @@
 
   .footer-social-list{
     margin-top: 20px;
+  }
+
+  .clouds img{
+    height: 150px;
+    width: 1000px;
+   
+
+  }
+
+  .hero-games .clouds img{
+    position: absolute;
+    bottom: 15%;
+    max-width: 100%;
+    animation: animate calc(2s * var(--i)) linear infinite;
   }
 
   .notification{
