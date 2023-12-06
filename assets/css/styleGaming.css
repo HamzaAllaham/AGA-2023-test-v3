@@ -584,6 +584,11 @@
     #HEADER
   \*-----------------------------------*/
   
+.header.sticky {
+  padding: 5px 100px;
+  background: black;
+}
+
   .header {
     position: fixed;
     top: 0;
@@ -592,8 +597,8 @@
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
     padding-block: 20px;
+    transition: 0.6s;
     z-index: 4;
   }
   
@@ -601,6 +606,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.6s;
   }
 
   
@@ -656,9 +662,6 @@
     right: -300px;
     width: 100%;
     max-width: 300px;
-    background-color: #0102030a;
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
     height: 100%;
     box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.5);
     visibility: hidden;
@@ -692,10 +695,11 @@
   .navbar-list {
     border-top: 1px solid hsla(0, 0%, 100%, 0.1);
     margin-bottom: 30px;
+    transition: 0.6s;
   }
   
   .navbar-link {
-    color: var(--white);
+    color: white;
     font-size: 15px;
     padding: 10px 25px;
     font-weight: var(--fw-500);
@@ -753,7 +757,7 @@
     margin-right: 21px;
     margin-left: 21px;
     background-color: rgba(0, 0, 0, 0);
-    color: var(--platinum);
+    color: white;
     border: 0;
     font-size: 15px;
     font-family: var(--ff-oswald);
@@ -2760,6 +2764,7 @@
     width: max-content;
     height: auto;
     box-shadow: none;
+    transition: 0.6s;
   }
 
   .about-banner { max-width: 500px; }
@@ -2772,15 +2777,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    transition: 0.6s;
   }
 
   .navbar-link {
     position: relative;
-    color: var(--platinum);
+    color: white;
     padding-block: 34px;
     border: none;
     font-family: var(--ff-oswald);
     text-transform: uppercase;
+    transition: 0.6s;
     letter-spacing: 1px;
     z-index: 1;
   }
