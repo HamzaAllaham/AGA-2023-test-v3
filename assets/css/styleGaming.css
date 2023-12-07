@@ -218,7 +218,7 @@
 .gradient-text{
   animation: gradient 3s linear infinite;
   font-size: 60px;
-  background: -webkit-linear-gradient(15deg, #EC0869, #3772FE , #EC0869, #3772FE );
+  background: -webkit-linear-gradient(15deg, #EC0869, #ff8bae , #EC0869, #ff8bae );
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
