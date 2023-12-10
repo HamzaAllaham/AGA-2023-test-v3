@@ -313,14 +313,16 @@
              
                 <script type="text/javascript">var sumbitted= false</script>
                 <iframe name="Confirmation" id="Confirmation" style="display: none;" onload="if (sumbitted){window.location='confirmed-vote.html';}"></iframe>
-                <form method="post" target="Confirmation" onsubmit="sumbitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSdiwitPFQvIhBHSg4E57YNTbTD3wTnkgu18FX-cX46EchIdLQ/formResponse">
+                <form id="myForm" method="post" target="Confirmation" onsubmit="sumbitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSdiwitPFQvIhBHSg4E57YNTbTD3wTnkgu18FX-cX46EchIdLQ/formResponse">
                   
+
                  
                   <div class="bottom-send ">
               
-                    <button type="submit">Submit</button><br>
+                    <button type="submit" onclick="submitForm()">Submit</button><br>
+                   
               
-            </div>
+                      </div>
 
 
                   <h2 class="h2 section-title">Best Game</h2>
@@ -517,7 +519,7 @@ window.addEventListener("scroll", reveal);
 
 
 
-                    <div class="grid_winners">
+                    <div class="grid_winners reveal">
                      
                       
 
@@ -679,7 +681,15 @@ window.addEventListener("scroll", reveal);
 
                 </form>
 
+                <script>
+        function submitForm() {
+            // Get the selected value
+            const selectedValue = document.querySelector('input[name="entry.1456149337"]:checked').value;
 
+            // Redirect to page2.html with the selected value as a parameter
+            window.location.href = "confirmed-vote.html?entry.1456149337=" + encodeURIComponent(selectedValue);
+        }
+    </script>
                                
     
               </div>

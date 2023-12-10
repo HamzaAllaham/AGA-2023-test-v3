@@ -19,7 +19,7 @@
 
      <!----CSS---->
 
-     <link rel="stylesheet" href="/assets/css/styleGaming.css">
+     <link rel="stylesheet" href="assets/css/styleGaming.css">
 
 
 
@@ -235,12 +235,25 @@
     
               <h1 class="h1 hero-title gradient-text"> &#160</h1>
 
-
-
-
+              
 
 
              
+              <p id="resulto" class="hero-subtitle"></p>
+
+
+
+              <script>
+                // Get the query parameters from the URL
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+        
+                // Get the selectedValue parameter from the URL
+                const selectedValue = urlParams.get('entry.1456149337');
+        
+                // Display the selected value in an external h2 tag
+                document.write("<h2>" + (selectedValue ? selectedValue : "No value selected") + "</h2>");
+            </script>
             
     
               
