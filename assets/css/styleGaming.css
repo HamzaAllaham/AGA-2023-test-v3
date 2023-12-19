@@ -258,7 +258,7 @@
   
   .h2 {
     font-size: var(--fs-2);
-    color: var(--white);
+    color: #EC0869;
     line-height: 1.2;
     text-transform: uppercase;
     font-family: var(--ff-oswald); 
@@ -1528,6 +1528,24 @@
 
 #sp3 {
   max-height: 44px;
+}
+
+#prt1 {
+  max-height: 44px;
+}
+
+#prt2 {
+  max-height: 55px;
+}
+
+
+#prt3 {
+  max-height: 60px;
+}
+
+
+#prt4 {
+  max-height: 50px;
 }
 
 
