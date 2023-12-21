@@ -242,6 +242,9 @@
               <p id="resulto" class="hero-subtitle"></p>
 
 
+              
+            
+             
 
               <script>
                 // Get the query parameters from the URL
@@ -249,17 +252,28 @@
                 const urlParams = new URLSearchParams(queryString);
         
                 // Get the selectedValue parameter from the URL
-                const selectedValue = urlParams.get('entry.1456149337');
+                const selectedValue = urlParams.get('entry.787769497');
         
                 // Display the selected value in an external h2 tag
-                document.write("<h2>" + (selectedValue ? selectedValue : "No value selected") + "</h2>");
+                
+
+    // Set the variable text in the content div
+    document.getElementById('selectedValue').innerText = selectedValue;
+
+    function shareOnTwitter() {
+      var textToShare = encodeURIComponent("I have voted for "+selectedValue+" as the best game of 2023 in the Arab Game Awards, you can also vote from here: arabgameawards.com");
+      var twitterUrl = `https://twitter.com/intent/tweet?text=${textToShare}`;
+      window.open(twitterUrl, '_blank');
+    }
+
+
             </script>
             
     
-              
             
-
-              
+            <div id="shareButtons">
+              <button id="twitterBtn" class="twitter-btn" onclick="shareOnTwitter()">Share on Twitter  <ion-icon class="twitter-icon" name="logo-twitter"></ion-icon></button>
+            </div>
     
             </div>
           </section>

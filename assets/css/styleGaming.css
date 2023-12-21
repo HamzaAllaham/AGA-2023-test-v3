@@ -1147,7 +1147,7 @@ height: 60px;
     position: absolute;
     bottom: 0;
     max-width: 100%;
-    animation: animate calc(2.5s * var(--i)) linear infinite;
+    animation: animate calc(1.5s * var(--i)) linear infinite;
   }
 
   @keyframes animate {
@@ -1161,11 +1161,33 @@ height: 60px;
     }
     100%{
       opacity: 0;
-      transform: scale(3);
+      transform: scale(1.5);
     }
   }
 
+  #shareButtons{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
 
+  .twitter-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.twitter-icon {
+    margin-left: 10px;
+    font-size: 20px; /* You can adjust the font size as needed */
+}
   
 
 
@@ -1598,7 +1620,8 @@ height: 60px;
   }
 
   .s-by-tiktok ion-icon {
-    margin-left: 5px; /* Adjust the margin between text and icon */
+    margin-right: 5px; 
+    margin-left: 5px;
   }
 
 
