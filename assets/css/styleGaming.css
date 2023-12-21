@@ -1128,7 +1128,7 @@ height: 60px;
 
 
   .clouds img{
-    height: 35%;
+    height: 30%;
     width: 100%;
    
 
@@ -1147,7 +1147,7 @@ height: 60px;
     position: absolute;
     bottom: 0;
     max-width: 100%;
-    animation: animate calc(2s * var(--i)) linear infinite;
+    animation: animate calc(2.5s * var(--i)) linear infinite;
   }
 
   @keyframes animate {
@@ -1468,7 +1468,7 @@ height: 60px;
 
 
   .hero-games {
-    background: url("../img/AGA\ ART\ PC\ 4K.png") no-repeat;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnapm5GFHX6z-szs_E0TDZD-RFPabyM969ULx94B7gVnG6SmgLRv9Yve4peHnCxfzy-GpcnOc54JTRh-dyNOb_dsyDjBxd-oJ-0YALdsKAdm_l34ArqY2sLSPeknbsSCuxFWJZvT10TCDg4o9_nZJRSxnVsGzJ2qKpY_nD7wp70jPU4J7066kt4Hzpdu5o/s16000/2222.png") no-repeat;
     background-size: cover;
     background-position: top center;
     padding: var(--section-padding) 0;
@@ -1492,16 +1492,117 @@ height: 60px;
   }
   
   .hero-title { 
+    color: white;
     letter-spacing: 0.16rem;
-    margin-bottom: 100px; }
+    margin-bottom: 30px;
+    text-align: left;
+}
+  
   
   .btn-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
   }
+
+
+
+  .calander-btn {
+    background: #EC0869;
+    border: 1px solid #EC0869;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .calander-btn:hover,
+  .calander-btn:active {
+    background-color: #b8165c;
+    background-position: 0 0;
+    transition: 0.3s;
+  }
+  
+  .calander-btn:active {
+    opacity: .5;
+  }
+
+
+  .vote-btn {
+    background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #EC0869;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 200px;
+  }
+  
+  .vote-btn:hover,
+  .vote-btn:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+    transition: 0.3s;
+  }
+  
+  .vote-btn:active {
+    opacity: .5;
+  }
+
+
+  .s-by-tiktok a {
+    display: flex;
+    align-items: center; 
+    text-decoration: none; 
+    color: #ffffff;
+    
+  }
+
+  .s-by-tiktok ion-icon {
+    margin-left: 5px; /* Adjust the margin between text and icon */
+  }
+
+
+
   
   .hero .btn-primary ion-icon { font-size: 25px; }
 
@@ -2439,19 +2540,7 @@ height: 60px;
     margin-top: 20px;
   }
 
-  .clouds img{
-    height: 150px;
-    width: 1000px;
-   
 
-  }
-
-  .hero-games .clouds img{
-    position: absolute;
-    bottom: 15%;
-    max-width: 100%;
-    animation: animate calc(2s * var(--i)) linear infinite;
-  }
 
   .notification{
     background-color: #f44336;
