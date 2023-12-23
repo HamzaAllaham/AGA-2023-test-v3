@@ -220,14 +220,14 @@
     </script>
 
 
-      <div class="notification">
+     <!-- <div class="notification">
 
         <a class="announcement" target="_blank" href="https://twitter.com/ArabGameAwards">
           Voting has ended | Arab Game Awards coming on 20/01/2023 </a>
 
       </div>
 
-
+    -->
 
 
 
@@ -394,7 +394,6 @@
               <div class="fixed-partners">
                 <div class="partner-images">
                   <!-- Add your partner images here -->
-                  <img id="sp1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqJ3AdjG6ELoYv-UIltze7OV8lADNf2jh4071H0T080S8_vt7zZQecLbL28LQ66oMj04c0PxZSD_MBuSFR5zAPgX1wdYECwLdZXEk8fYwIiiBedSBN_eP89oH3zwpwZYJHrL1Eb-94TyoGVb31Wp-Fct1o04DYr7_rD8t8jn6LvnJPBjsw1IMW1kA2VMeP/s320/urpay-logo.png" alt="Partner 1">
                   <img id="sp2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_eC5JH-z6rRiUMaXGn702_tSultDOJW7G1sJmt-yTVs3o8p4f5Qqez8jAt4eJIkUe2h5VaK4Qpfsi1RYkKzCBen7OV5tKq_b0KsZoo6YmVNqJVrFFvciZKFhS5CA4GwZOcd5dJHCM2qTHGsAbK5IizmUiAwB1I-jhWGeEdK7hFsc_nTm1bK5IusQ4NHgf/s320/tiktok%20logo.png" alt="Partner 2">
                   <img id="sp3" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM7ou3GvJgOrMAjJno6gmgY-1NCs0Mf9OAWg2IhMfMva9VT54UYr047jY1Xl46pohC7bzBOkxQIHfqn4DUmDEYq7rc69vwkcnjJ4KgYX2ttejy3dG8oIHi3UI5B9miI-w_po3pCenVEcmvocja62wRt4cZp01B5ec7o3nuuJaAWF0FBZxwtuSnDxOekn5P/s320/vov-logo.png" alt="Partner 3">
                   <!-- Add more partner images as needed -->
@@ -418,14 +417,7 @@
             <section class="about" id="about">
               <div class="container">
     
-                <figure class="about-banner">
-    
-                  <img src="assets/img/about3d-new.png" alt="M shape" class="about-img">
-    
-                  
-    
-                </figure>
-
+                
 
                 
     
@@ -444,7 +436,15 @@
 
 
 
+                    <script type="">
+                      $(document).ready(function($) {
+        $('.count-number').counterUp({
+            delay: 10,
+            time: 1000
+        });
+ });
 
+                    </script>
 
 
                     <div class="a-box">
@@ -456,7 +456,7 @@
                         </div>
                       </div>
                       <div class="text-container">
-                        <h3>6,000,000</h3>
+                        <h3 class="count-number">6000000</h3>
                         <div class="about__description">
                           VIEWS
                       </div>
@@ -629,14 +629,15 @@
    
                </ul>
     
-
+              <div class="view-all-btn-div">
                 <a href="jury.html">
-                <button  class="btn-watch">
+                <button  class="view-all-btn">
 
                   <span>View all</span>
                 </button>
 
               </a>
+            </div>
     
               </div>
             </section>
@@ -715,51 +716,7 @@
               - #Contact Us
             -->
     
-            <section class="contactus" id="contactus">
-              <div class="container">
-                <h2 class="h2 section-title">Contact us</h2>
-                
-                <form id="myForm-contact" method="post" target="Confirmation" onsubmit="sumbitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSdhWv0SM_98LqvRHyR9J6lLWc6qbpxvCEWXv2gqUetcaOHDnQ/formResponse">
-                  <input name="entry.167280167" type="email" placeholder="E-mail" required>
-                  <input name="entry.2084437870" type="text" placeholder="Subject" required>
-                  <textarea name="entry.1657324574" class="field" cols="30" rows="10" placeholder="Message" required></textarea>
-                  <h1 id="form-captcha">I am not not a Robot: 15 + 10 =?</h1>
-                  <input id="input-captcha"  type="number" placeholder="Enter a number" required>
-                  <button class="button_send" type="submit">Send</button>
-                 
-                </form>
-
-
-                <script>
-                  const scriptURL = 'https://script.google.com/macros/s/AKfycbxwAO8HnA1EhY7ZiZ_JYLz9CNwaVCnFMakRCaSDDWkuaVMrqlu231a9_VJnkPglZnKu/exec'
-                  const form = document.forms['submit-to-google-sheet']
-
-
-                  form.addEventListener('submit', e => {
-                    e.preventDefault()
-                    var value1 = document.getElementById("input-captcha").value;
-                    if (value1 == 25){
-                      alert("Your message has been sent")
-                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                      .then()
-                      .catch(error => console.error('Error!', error.message))
-                      
-                    } else {
-                      alert('Invalid captcha');
-                    }
-                    
-                   
-                  })
-
-
-                
-                  
-                </script>
-
-
-               
-              </div>
-            </section> 
+           
 
 
 
@@ -790,7 +747,54 @@
 
 
 
-            
+            <section class="contactus" id="contactus">
+              <div class="container">
+
+             
+                
+                <div class="contact-form-background">
+                  <h2 class="form-title">Contact us</h2>
+                <form id="myForm-contact" method="post" target="Confirmation" onsubmit="sumbitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSdhWv0SM_98LqvRHyR9J6lLWc6qbpxvCEWXv2gqUetcaOHDnQ/formResponse">
+                  <input name="entry.167280167" type="email" placeholder="E-mail" required>
+                  <input name="entry.2084437870" type="text" placeholder="Subject" required>
+                  <textarea name="entry.1657324574" class="field" cols="30" rows="10" placeholder="Message" required></textarea>
+                  <h1 id="form-captcha">I am not not a Robot: 15 + 10 =?</h1>
+                  <input id="input-captcha"  type="number" placeholder="Enter a number" required>
+                  <button class="button_send" type="submit">Send</button>
+                 
+                </form>
+
+              </div>
+                <script>
+                  const scriptURL = 'https://script.google.com/macros/s/AKfycbxwAO8HnA1EhY7ZiZ_JYLz9CNwaVCnFMakRCaSDDWkuaVMrqlu231a9_VJnkPglZnKu/exec'
+                  const form = document.forms['submit-to-google-sheet']
+
+
+                  form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    var value1 = document.getElementById("input-captcha").value;
+                    if (value1 == 25){
+                      alert("Your message has been sent")
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                      .then()
+                      .catch(error => console.error('Error!', error.message))
+                      
+                    } else {
+                      alert('Invalid captcha');
+                    }
+                    
+                   
+                  })
+
+
+                
+                  
+                </script>
+
+
+               
+              </div>
+            </section> 
     
           </div>
     
@@ -824,9 +828,7 @@
     
             <div class="footer-brand-wrapper">
     
-              <a href="#" class="logo">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4foc266Iv1Ja7tR4WRA8JKhdAvqLnzO3EcVt5xM_FVm4WpyJIlUIDZQHeEvZ5BKWh3A51Yrsg2NNMSUdt4sMCAxFtsHk-VI2AvEpNzrdbbhGP4oYzuufkczy7mOgpzaWVy8pjenwNegHapn8wn7Vh1aYI7VuU4_Nzn6yMJ9h8BcCvyyL9tJB0DL1uiNAD/s1600/yellow-logo.png" alt="logo">
-              </a>
+              
     
               <div class="footer-menu-wrapper">
     
@@ -971,7 +973,7 @@
 
      <!----GO UP---->
 
-  <a href="#top" class="btn-watch-top go-top" data-go-top>
+  <a href="#top" class="go-top-btn go-top" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
