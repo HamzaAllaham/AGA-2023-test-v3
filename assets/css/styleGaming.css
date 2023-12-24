@@ -1761,7 +1761,7 @@ height: 60px;
       overflow: hidden;
       border-radius: 20px;
       border-style: solid;
-      border-color: #F1D301;
+      border-color: #ffffff;
       display: inline-block;
   }
   
@@ -2323,8 +2323,8 @@ height: 60px;
 
 
   .footer-social-link {
-    background: var(--xiketic);
-    color: var(--light-gray);
+    background: white;
+    color: black;
     width: 35px;
     height: 35px;
     display: grid;
@@ -3297,11 +3297,9 @@ height: 60px;
 
   .about .container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 100px;
-    padding-right: 110px;
   }
 
   .about-banner {

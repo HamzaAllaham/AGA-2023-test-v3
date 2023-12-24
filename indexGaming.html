@@ -418,10 +418,28 @@
               <div class="container">
     
                 
+                <script type="text/javascript">
+                  function reveal() {
+var reveals = document.querySelectorAll(".reveal");
 
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
+}
+
+window.addEventListener("scroll", reveal);
+                  </script>
                 
     
-                <div class="about-content">
+                <div class="about-content reveal">
     
                 
     
@@ -435,28 +453,62 @@
                   <div class="about__stats">
 
 
-
-                    <script type="">
-                      $(document).ready(function($) {
-        $('.count-number').counterUp({
-            delay: 10,
-            time: 1000
-        });
- });
-
+                    <script>
+                      const counterIds = ['counter1', 'counter2', 'counter3'];
+                      const intervalDuration = 2;
+                      let countersStarted = false;
+                  
+                      function updateCounter(counterId, targetCount) {
+                        let currentCount = 0;
+                        const increment = Math.ceil(targetCount / (1000 / intervalDuration));
+                        let counterInterval;
+                  
+                        function incrementCounter() {
+                          currentCount += increment;
+                  
+                          if (currentCount >= targetCount) {
+                            currentCount = targetCount;
+                            clearInterval(counterInterval);
+                          }
+                  
+                          const formattedCounter = currentCount.toLocaleString();
+                          document.getElementById(counterId).textContent = formattedCounter;
+                        }
+                  
+                        // Set the interval for the incrementCounter function
+                        counterInterval = setInterval(incrementCounter, intervalDuration);
+                      }
+                  
+                      // Add an event listener to detect scrolling
+                      window.addEventListener('scroll', function () {
+                        const section2Rect = document.getElementById('about').getBoundingClientRect();
+                  
+                        // Start all counters when the top of Section 2 is visible
+                        if (section2Rect.top >= 0 && section2Rect.top <= window.innerHeight && !countersStarted) {
+                          countersStarted = true;
+                  
+                          counterIds.forEach((counterId) => {
+                            const targetCount = parseInt(document.getElementById(counterId).dataset.target);
+                            updateCounter(counterId, targetCount);
+                          });
+                        }
+                      });
                     </script>
+                   
+
+                   
 
 
                     <div class="a-box">
                       <div class="img-container">
                         <div class="img-inner">
                           <div class="inner-skew">
-                            <img src="assets/img/views.png">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-gR_Z1ie4zptL_44AVLDx-VvB39X9w_KDdmLuXIYM07nmSGfyx-WXKY_RBggIaCntJNXiiWqhc7FwE-qpXt4G2qTWCpUE6Kwv4EST1sz_hYB2tn7ZvyJKEfbt3qOMTU4A6gui7uKtVtmhinSXQ8PbdH1e9E_piImQ2iwtj2lwW4_qiZvXTvAIAWNklVBD/s320/Frame%20833318246.png">
                           </div>
                         </div>
                       </div>
                       <div class="text-container">
-                        <h3 class="count-number">6000000</h3>
+                        <h3 id="counter1" data-target="6000000">0</h3>
                         <div class="about__description">
                           VIEWS
                       </div>
@@ -468,12 +520,12 @@
                       <div class="img-container">
                         <div class="img-inner">
                           <div class="inner-skew">
-                            <img src="assets/img/search.png">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpBSI_wWz1hBclaa2LYgkoLPxwE_FiJKo-3uHQN3nA7aG7Bs9-UnDPYivEL50eLH1u_YvnWCtPq5Bcs_u0Pv9AHsxY-EAZkXHr6IkIUecppUjRB3DOYPMrDYRRfxQGMmsiadNFSwOKOo5YVH2vY-TjKw9DJU91ODrxQdrhAod4yBV8ebHXi5bhpxurqp_h/s320/Frame%20833318245.png">
                           </div>
                         </div>
                       </div>
                       <div class="text-container">
-                        <h3>16,000,000</h3>
+                        <h3 id="counter2" data-target="16000000">0</h3>
                         <div class="about__description">
                           IMPRESSIONS ON SOCIALS
                       </div>
@@ -485,12 +537,12 @@
                       <div class="img-container">
                         <div class="img-inner">
                           <div class="inner-skew">
-                            <img src="assets/img/media.png">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAhKUB65dTMR9DaZ2_4oAt2Nz7Y_iuwIvX6_5AJeAktqpJhb7F9-vsGTeDYifFGLXHBZNWUAeJBZyn6g2yDqtLXB6AAZzQT6fQ0EyA3kReJwA46mqI1pZ0gUYQJ7xdWoc1R8XFjdZresJEgnQhl9vjfFgvWhrnzp2sxrema7r5LRRyYZxieCqnzgEP8Qhr/s320/Frame%20833318244.png">
                           </div>
                         </div>
                       </div>
                       <div class="text-container">
-                        <h3>100+</h3>
+                        <h3 id="counter3" data-target="100">0</h3>
                         <div class="about__description">
                           MEDIA COVERAGE
                       </div>
@@ -545,7 +597,7 @@
               - #JURY
             -->
     
-            <section class="team" id="team">
+            <section class="team reveal" id="team">
               <div class="container">
     
                 <h2 class="h2 section-title">JURY</h2>
@@ -649,7 +701,7 @@
             <!--FAQ-->
             
     
-            <section class="gears" id="gears">
+            <section class="gears reveal" id="gears">
               <div class="container">
     
                 <h2 class="h2 section-title">frequently asked questions</h2>
@@ -983,7 +1035,7 @@
 
 
     <!----JAVASCRPIT---->
-    <script src="assets/js/mainGaming.js"></script>
+    <script src="/AGA-2023-test-v3/assets/js/mainGaming.js"></script>
 
 
     <!----CAPTCHA---->
