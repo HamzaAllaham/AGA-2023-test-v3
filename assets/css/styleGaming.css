@@ -145,7 +145,7 @@
   
   ::-webkit-scrollbar { width: 8px; }
   
-  ::-webkit-scrollbar-track { background: var(--raisin-black-2); }
+  ::-webkit-scrollbar-track { background: white; }
   
   ::-webkit-scrollbar-thumb {
     background: var(--orange);
@@ -202,7 +202,7 @@ height: 60px;
 
   box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
   opacity: 0;
-  z-index: 4;
+  z-index: 10;
   border-radius: 20px 300px 0px 0px;
   transition: 0.3s;
   
@@ -294,6 +294,7 @@ height: 60px;
   
 .gradient-text{
   animation: gradient 3s linear infinite;
+  text-align: center;
   font-size: 60px;
   background: -webkit-linear-gradient(15deg, #EC0869, #ff8bae , #EC0869, #ff8bae );
   background-size: 300%;
@@ -330,7 +331,24 @@ height: 60px;
 }
 
 
+.twt-icon{
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd5HbztHZPSd7_-iLTsVLl2I5A124kjlTWvK5Ag964c9_7uEbzDq6IcsgCHF6ZzyWVpGM2f878yrI8P6eDxgLhzdNNoAe2uym_3mAKOGP76nMW-LC38h1lerEKl3N9drD_1cw37aJEGYt6xOHhuy4prtUhmHwIfPxlHh1RgNJ0acNqN8MCfV1g7HuFpLmJ/s1600/twitter%20(1).png") no-repeat;
+  background-position:center;
+  height:20px ;
+  width: 20px;
+  background-size: 20px;
+ 
+}
 
+.twt-icon:hover{
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDeCWwCuWps4bpg1E3NcPX-aiD6QubIC9kl9QOl4vt-KlZfik3QyW-kDy-ALYBsSkvwZUwCnGAcmgbB6uyMBmHkao4zt7tEKOHRIhuet3UaeLcBu_X6QOg5C0Q3j1C0zPE3YUlgP_0AWWpU0AGmA4iN9WNtlyYS9ZprDKTnbHt4S-BjaksrK7J_Krthv1q/s1600/twitter%20(7)%201.png") no-repeat;
+  transition: 0.2s;
+  background-position:center;
+  height:20px ;
+  width: 20px;
+  background-size: 20px;
+  
+}
   
   
   .h2 {
@@ -1011,7 +1029,7 @@ height: 60px;
 
 .grid_winners{
     display: flex;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     align-items: center;
     justify-content: center;
@@ -1058,7 +1076,7 @@ height: 60px;
     overflow: hidden;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     transition: 0.2s;
-    width: 15rem;
+    width: 17rem;
     height: 24rem;
   }
 
@@ -1144,6 +1162,8 @@ height: 60px;
   border-radius: 15px;
   border: 2px solid rgb(194, 194, 194);
   margin-top: 20px;
+  align-items: center;
+  align-content: center;
 }
 
   .container-vote {

@@ -315,7 +315,7 @@
                  
                   <div class="bottom-send" id="bottom-sendid">
               
-                    <button class="submit-vote" type="submit" onclick="submitForm()">Submit</button><br>
+                    <button class="submit-vote" type="submit" onclick="submitForm(); resetRadio();">Submit</button><br>
                    
               
                       </div>
@@ -323,6 +323,20 @@
 
                     
                       <script>
+
+
+                        function resetRadio() {
+            // Select all radio buttons within the form
+            var radios = document.querySelectorAll('form input[type="radio"]');
+
+            // Loop through each radio button and set its 'checked' property to false
+            radios.forEach(function(radio) {
+                radio.checked = false;
+            });
+        }
+        window.onload = resetRadio;
+
+                        
     function checkScroll() {
       var container = document.getElementById('gameyearid');
       var scrollDiv = document.getElementById('bottom-sendid');
@@ -3548,7 +3562,7 @@ window.addEventListener("scroll", reveal);
   
   <div class="card">
   
-  <img class="card-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiORVSsHhyFxoo0ds8lAtTp9emoT8McDxd1YbhP4R0H3m5Koyg2Z3gTlGc02baylRHPhr49v3JYPUPtfI_TBOgMuIPVGnkpAyNzceyGL8bkvZOTfHwLjcGVVbsZ2aQ2PvEUSBhK95dTZV62uFk44N6ypjCkFcLtvBL_joxJy_sNBI7hImi-7bhISm8kl86Y/s320/Abu%20Makkah.jpg" alt="Rome" />
+  <img class="card-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGTkP_mz7vSArVyWhEC8CwaLvDv6DtceEQhZsehI2e_PO37_tioup3jNpyK0Asvm9qSAUra-t0Ajso563-V25BikcmJEzqrvlF9DC_ahVQ965335K4Dv2i55h_hGPSJcI5Qy86KRU40OpUh7ad-GANjOajZNhPtmdqHPCTAjRLqtxPE3caW49pwRyRse6h/s320/Abu%20Makkah%202.jpg" alt="Rome" />
   <div class="card-content">
   <h1 class="card-header1">Abu Makkah</h1>
   
@@ -3620,7 +3634,7 @@ window.addEventListener("scroll", reveal);
   
   <div class="grid-item2">
   <div class="card">
-  <img class="card-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpYSoI6Z3dViuYC8rs83gk5eRiARhQM6f3QuPFuUAmt5iFy32dFNKU7CHHyN8iTVUYmzvhAKYmUchONWbvmc9MjvValQmBeZyZojISuIBnKB5-TgcVVk6p6ZaZmHb_Ry9zY9Hi7Ycta0ymGfp7tNPgIds31FST9141Y3loTYTamhW5a5CaGUduW9HF4-g9/s320/Quartz.jpg" alt="Rome" />
+  <img class="card-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE6-PNyNw_iA8KFend19sTJmoj6-ttZCvab2H4VYNVr9RGSN0qdHhn5X5Cdp7j77L11RRZhCfNVpvWyKpyfabquWp_C09mSo7li75l-IqRMynJAnAbnGrsV1ebrUNw2ktR1ZuwVxMgTpI0PXQmua3ef9Y_fuPdRFnj7L0Dh7U0kqw0AKRQxt646UKJMjkp/s320/Quartz%201.jpg" alt="Rome" />
   <div class="card-content">
   <h1 class="card-header1">Quartz</h1>
   
@@ -3636,22 +3650,7 @@ window.addEventListener("scroll", reveal);
   </div>
   
   
-  <div class="grid-item2">
-  <div class="card">
-  <img class="card-img" src="assets/img/2022/Sifu.jpeg" alt="Rome" />
-  <div class="card-content">
-  <h1 class="card-header1">6</h1>
-  
-  <div class="section-vote">
-  <label class="container-vote">VOTE
-  <input class="radio-vote" type="radio" id="entry.634498036" name="entry.634498036" value="6">
-  <span class="checkmark"></span>
-  </label>
-  </div>
-  
-  </div>
-  </div>
-  </div>
+ 
   
 
   
@@ -3840,147 +3839,146 @@ window.addEventListener("scroll", reveal);
       <!--==================== FOOTER ====================-->
       <footer>
 
-        <div id="footer-topid" class="footer-top">
-          <div class="container">
-    
-            <div class="footer-brand-wrapper">
-    
-              <a href="#" class="logo">
-                <img src="assets/img/logo-red-hover.svg" alt=" logo">
-              </a>
-    
-              <div class="footer-menu-wrapper">
-    
+<div id="footer-topid" class="footer-top">
+  <div class="container">
 
-                <!--
-                <ul class="footer-menu-list">
-    
-                  <li>
-                    <a href="#hero" class="footer-menu-link">Home</a>
-                  </li>
-    
-                  <li>
-                    <a href="indexGaming.html#about" class="footer-menu-link">About</a>
-                  </li>
-    
-                  
-    
-                  <li>
-                    <a href="jury.html"  class="footer-menu-link">Jury</a>
-                  </li>
+    <div class="footer-brand-wrapper">
 
-                  <li>
-                    <a href="games.html" class="footer-menu-link">Games</a>
-                  </li>
-    
-                  
-    
-                  <li>
-                    <a href="indexGaming.html#contactus" class="footer-menu-link">Contact</a>
-                  </li>
-    
-                </ul>
+      
 
-              -->
-    
-                <div class="footer-input-wrapper">
-                  
+      <div class="footer-menu-wrapper">
 
 
-                 
+        <!--
+        <ul class="footer-menu-list">
 
-                  <!--
-                <form action="" class="footer__form" id="contact-form">
+          <li>
+            <a href="#hero" class="footer-menu-link">Home</a>
+          </li>
 
+          <li>
+            <a href="#about" class="footer-menu-link">About</a>
+          </li>
 
-                    <input type="email" name="user_email" placeholder="Type your email here" class="footer__input" id="contact-user">
-                   
+          
 
-                    <button type="submit" class="button__flex btn">
-                      <a class="text__flex">Subscribe to newsletter <i class="ri-mail-open-fill"></i> </a>
-                    </button>
+          <li>
+            <a href="jury.html"  class="footer-menu-link">Jury</a>
+          </li>
 
-                    
-                </form>
+          <li>
+            <a href="games.html"  class="footer-menu-link">Winners</a>
+          </li>
 
-                -->
+          
 
-                  
-    
-                  
-                </div>
-    
-              </div>
-    
-            </div>
-    
-            <div class="footer-quicklinks">
-    
-              <ul class="quicklink-list">
-    
-                <li>
-                  <a href="indexGaming.html#gears"  class="quicklink-item">Faq</a>
-                </li>
-    
-                
-    
-    
-                <li>
-                  <a href="privacy.html"  class="quicklink-item">Privacy</a>
-                </li>
-    
-              </ul>
-    
-              <ul class="footer-social-list">
-    
-                
-                <li>
-                  <a href="https://twitter.com/ArabGameAwards" target="_blank" class="footer-social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
+          <li>
+            <a href="#contactus" class="footer-menu-link">Contact</a>
+          </li>
+
+        </ul>
+
+         -->
+
+        <div class="footer-input-wrapper">
+          
 
 
-                <li>
-                  <a href="https://www.instagram.com/arabgameawards/" target="_blank" class="footer-social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-    
-                
-    
-                <li>
-                  <a href="https://www.youtube.com/@arabgameawards/videos" target="_blank" class="footer-social-link">
-                    <ion-icon name="logo-youtube"></ion-icon>
-                  </a>
-                </li>
 
 
-                <li>
-                  <a href="https://www.tiktok.com/@arabgameawards" target="_blank" class="footer-social-link">
-                    <ion-icon name="logo-tiktok"></ion-icon>
-                  </a>
-                </li>
-                
-    
-              </ul>
-    
-            </div>
-    
-          </div>
-        </div>
-    
-        <div class="footer-bottom">
-          <div class="container">
-            <p class="copyright">
-              Copyright &copy; 2022 The Arab Games Award. all rights reserved | developed by <a href="https://twitter.com/EvoliteStudio" target="_blank"> Evolite Studio </a>
-            </p>
-    
+          <a  class="email_contact"></a>
+
+          <!--
+        <form action="" class="footer__form" id="contact-form">
+
+
+            <input type="email" name="user_email" placeholder="Type your email here" class="footer__input" id="contact-user">
+           
+
+            <button type="submit" class="button__flex btn">
+              <a class="text__flex">Subscribe to newsletter <i class="ri-mail-open-fill"></i> </a>
+            </button>
+
             
-          </div>
+        </form>
+
+        -->
+
+          
+
+          
         </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-quicklinks">
+
+      <ul class="quicklink-list">
+
+        <li>
+          <a href="#gears" class="quicklink-item">Faq</a>
+        </li>
+
+        
+
+      
+
+        <li>
+          <a href="privacy.html" class="quicklink-item">Privacy</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-social-list">
+
+        
+        <li>
+          <a href="https://twitter.com/ArabGameAwards" target="_blank" class="footer-social-link">
+            <div class="twt-icon" ></div>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="https://www.instagram.com/arabgameawards/" target="_blank" class="footer-social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        
+
+        <li>
+          <a href="https://www.youtube.com/@arabgameawards/videos" target="_blank" class="footer-social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.tiktok.com/@arabgameawards" target="_blank" class="footer-social-link">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <div class="container">
+    <p class="copyright">
+      Copyright &copy; 2024 The Arab Games Award. all rights reserved | developed by <a href="https://twitter.com/EvoliteStudio" target="_blank"> Evolite Studio </a>
+    </p>
+
     
-      </footer>
+  </div>
+</div>
+
+</footer>
 
 
 

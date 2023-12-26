@@ -146,7 +146,7 @@
   
   ::-webkit-scrollbar { width: 8px; }
   
-  ::-webkit-scrollbar-track { background: var(--raisin-black-2); }
+  ::-webkit-scrollbar-track { background: white; }
   
   ::-webkit-scrollbar-thumb {
     background: var(--orange);
@@ -651,6 +651,7 @@ height: 60px;
     padding: 10px 25px;
     font-weight: var(--fw-500);
     transition: 0.6s ;
+    font-family: var(--ff-tajawal);
   }
 
   .navbar-link-ar {
@@ -658,7 +659,7 @@ height: 60px;
     font-size: 16px;
     padding: 10px 25px;
     font-weight: 700;
-    font-family: 'Tajawal', sans-serif;
+    font-family: var(--ff-tajawal);
     ;
     transition: 0.6s ;
   }
@@ -707,8 +708,8 @@ height: 60px;
     color: white;
     border: 0;
     font-size: 15px;
-    font-family: var(--ff-oswald);
-    font-weight: 500;
+    font-family: var(--ff-tajawal);
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -723,7 +724,7 @@ height: 60px;
     color: white;
     border: 0;
     font-size: 17px;
-    font-family: var(--ff-oswald);
+    font-family: var(--f-tajawal);
     font-weight: 500;
     transition: 0.6s;
     
@@ -3054,6 +3055,7 @@ height: 60px;
     justify-content: flex-end;
     align-items: center;
     transition: 0.6s;
+    flex-direction: row-reverse;
   }
 
   .navbar-link {
@@ -3061,10 +3063,11 @@ height: 60px;
     color: white;
     padding-block: 30px;
     border: none;
-    font-family: var(--ff-oswald);
+    font-family: var(--ff-tajawal);
+    font-weight: 700;
     text-transform: uppercase;
     transition: 0.6s;
-    letter-spacing: 1px;
+   
     z-index: 1;
   }
 
