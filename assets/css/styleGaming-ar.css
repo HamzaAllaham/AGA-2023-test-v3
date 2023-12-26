@@ -190,10 +190,25 @@
 
 /* CSS */
 
+.count-social{
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+#countdown {
+  font-size:25px;
+  font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 5px;
+      color: white;
+}
 
 .bottom-send {
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
   bottom: 0;
   left: 50%; /* Center the left edge */
@@ -204,7 +219,7 @@ height: 60px;
   box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
   opacity: 0;
   z-index: 4;
-  border-radius: 20px 300px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   transition: 0.3s;
   
 }
@@ -269,7 +284,8 @@ height: 60px;
  
 
   .submit-vote{
-    font-family: var(--ff-poppins);
+    font-family: var(--ff-tajawal);
+    font-weight: 800;
     height: max-height;
     width: 100%;
     color: black;
@@ -301,7 +317,21 @@ height: 60px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 100px;
+  font-family: var(--ff-tajawal);
 }
+
+
+.gradient-text-vote{
+  animation: gradient 3s linear infinite;
+  font-size: 80px;
+  background: -webkit-linear-gradient(15deg, #EC0869, #ff8bae , #EC0869, #ff8bae );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  font-family: var(--ff-tajawal);
+}
+
 
 
 
@@ -974,6 +1004,7 @@ height: 60px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: var(--ff-tajawal);
 }
 
 .twitter-icon {
@@ -1159,6 +1190,7 @@ height: 60px;
     -ms-user-select: none;
     user-select: none;
     color: white;
+    font-family: var(--ff-tajawal);
   
   }
   
@@ -1296,11 +1328,11 @@ height: 60px;
   
   .hero-subtitle {
     color: var(--white);
-    font-family: var(--ff-oswald);
+    font-family: var(--ff-tajawal);
     font-size: 50px;
     font-weight: var(--fw-500);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    font-weight: 800;
     text-shadow: 0 7px hsla(0, 0%, 0%, 0.4);
     margin-bottom: 10px;
   }
@@ -1329,7 +1361,7 @@ height: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 10px;
   }
 
@@ -1398,18 +1430,18 @@ height: 60px;
 
   .note-btn{
     background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border: 1px solid #EC0869;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
     color: #FFFFFF;
-    cursor: pointer;
     
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    
+    font-family: var(--ff-tajawal);
     font-size: 16px;
-    font-weight: 800;
+    
     line-height: 16px;
     min-height: 40px;
     outline: 0;

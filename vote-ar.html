@@ -19,7 +19,7 @@
 
      <!----CSS---->
 
-     <link rel="stylesheet" href="assets/css/styleGaming.css">
+     <link rel="stylesheet" href="assets/css/styleGaming-ar.css">
 
 
 
@@ -74,7 +74,7 @@
       <div class="container">
   
         <a href="indexGaming.html" class="nav__logo">
-          <img src="assets/img/2023-logo.svg" alt="">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4foc266Iv1Ja7tR4WRA8JKhdAvqLnzO3EcVt5xM_FVm4WpyJIlUIDZQHeEvZ5BKWh3A51Yrsg2NNMSUdt4sMCAxFtsHk-VI2AvEpNzrdbbhGP4oYzuufkczy7mOgpzaWVy8pjenwNegHapn8wn7Vh1aYI7VuU4_Nzn6yMJ9h8BcCvyyL9tJB0DL1uiNAD/s1600/yellow-logo.png" alt="">
         </a>
   
         <button class="nav-open-btn" data-nav-open-btn>
@@ -96,14 +96,17 @@
           <ul class="navbar-list">
   
             <li>
-              <a  href="indexGaming.html#hero" class="navbar-link">Home</a>
+              <a  href="#hero" class="navbar-link">الرئيسية</a>
             </li>
 
             <li>
-              <a  href="indexGaming.html#about" class="navbar-link">About</a>
+              <a  href="#about" class="navbar-link">عن الحفل</a>
             </li>
   
             
+            
+
+
 
             <script type="text/javascript">
               function Reset() {
@@ -117,25 +120,28 @@
           </script>
 
             <select id="dropdown-header" class="dropdown-header">
-              <option value="0" selected disabled>WINNERS</option>
+              <option value="0" selected disabled>الألعاب الفائزة</option>
               <option value="1" data-url="games2022.html">2022</option>
               <option value="2" data-url="games.html">2021</option>
               <option value="3" data-url="games2020.html">2020</option>
             
             </select>
             <i class="fa fa-chevron-down"></i>
+
+
+          
   
             <li>
-              <a  href="jury.html" class="navbar-link">Jury</a>
+              <a  href="jury.html" class="navbar-link">لجنة التحكيم</a>
             </li>
   
             <li>
-              <a  href="indexGaming.html#contactus" class="navbar-link">Contact Us</a>
+              <a  href="#contactus" class="navbar-link">تواصل معنا</a>
             </li>
 
 
             <li>
-              <a  href="juryAr.html" class="navbar-link-ar">العربية </a>             </a>
+              <a  href="indexGamingAr.html" class="navbar-link-ar">العربية </a>             </a>
             </li>
   
   
@@ -145,7 +151,7 @@
   
             <li>
               <a href="https://twitter.com/ArabGameAwards" target="_blank" class="footer-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <div class="twt-icon" ></div>
               </a>
             </li>
 
@@ -242,14 +248,14 @@
 
                <!-- <p class="hero-subtitle">Arab Game Awards 2023</p>-->
     
-              <h1 id="vote-title" class="gradient-text-vote">VOTE 2023</h1>
+              <h1 id="vote-title" class="gradient-text-vote">التصويت 2023</h1>
 
               
              
 
 
               <div class="note">
-                <div class="note-btn">Note: all awards are optional, you can vote for just one or all of them. <br><br>• To submit your votes you must click on the submit button at the bottom of your screen. <br><br>• The submit button will be shown automatically when you scroll down.</div> 
+                <div class="note-btn">ملاحظة: جميع الجوائز اختيارية, يمكنك التصويت لجائزة واحدة فقط او جميعهم<br><br>لإرسال الأصوات يجب عليك الضغط على زر الإرسال الظاهر أسفل الشاشة <br><br> زر الإرسال يظهر بشكل تلقائي عند التمرير لأسفل</div> 
               </div>
             
               
@@ -296,7 +302,6 @@
     
                 
              
-               
                 <script type="text/javascript">var sumbitted= false</script>
                 <iframe name="Confirmation" id="Confirmation" style="display: none;" onload="if (sumbitted){window.location='confirmed-vote-ar.html';}"></iframe>
                 <form id="myForm" method="post" target="Confirmation" onsubmit="sumbitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSdvpj-i17Hxvr4bsr-7BLxGmX8whD7ipS24oaoPzx0WOhJoVg/formResponse">
@@ -305,7 +310,7 @@
                  
                   <div class="bottom-send" id="bottom-sendid">
               
-                    <button class="submit-vote" type="submit" onclick="resetRadio();">Submit</button><br>
+                    <button class="submit-vote" type="submit" onclick="resetRadio();">إرسال</button><br>
                    
               
                       </div>
@@ -313,6 +318,7 @@
 
                     
                       <script>
+
 
                         function resetRadio() {
             // Select all radio buttons within the form
@@ -354,7 +360,7 @@
 
 
 
-                  <h2 id="btn-trigger" class="h2 section-title">Best Game</h2>
+                  <h2 id="btn-trigger" class="h2 section-title">أفضل لعبة</h2>
   
                   
                   <div id="gameyearid" class="gameyear">
@@ -396,7 +402,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">Alan Wake II</h1>
                             
                           <div id="section-voteid" class="section-vote">
-                            <label class="container-vote">VOTE
+                            <label class="container-vote">التصويت
                               <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="Alan Wake II">
                               <span class="checkmark"></span>
                             </label>
@@ -418,7 +424,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">Baldur’s Gate 3</h1>
 
                             <div class="section-vote">
-                              <label class="container-vote">VOTE
+                              <label class="container-vote">التصويت
                                 <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="Baldur’s Gate 3">
                                 <span class="checkmark"></span>
                               </label>
@@ -435,7 +441,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">Hi-fi Rush</h1>
                        
                             <div class="section-vote">
-                              <label class="container-vote">VOTE
+                              <label class="container-vote">التصويت
                                 <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="Hi-fi Rush">
                                 <span class="checkmark"></span>
                               </label>
@@ -452,7 +458,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">Hogwarts Legacy</h1>
                            
                             <div class="section-vote">
-                              <label class="container-vote">VOTE
+                              <label class="container-vote">التصويت
                                 <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="Hogwarts Legacy">
                                 <span class="checkmark"></span>
                               </label>
@@ -469,7 +475,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">The Legend of Zelda: Tears of the Kingdom</h1>
                           
                             <div class="section-vote">
-                              <label class="container-vote">VOTE
+                              <label class="container-vote">التصويت
                                 <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="The Legend of Zelda: Tears of the Kingdom">
                                 <span class="checkmark"></span>
                               </label>
@@ -487,7 +493,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">Lies of P</h1>
                            
                             <div class="section-vote">
-                              <label class="container-vote">VOTE
+                              <label class="container-vote">التصويت
                                 <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="Lies of P">
                                 <span class="checkmark"></span>
                               </label>
@@ -504,7 +510,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">Marvel’s Spider-Man 2</h1>
                            
                             <div class="section-vote">
-                              <label class="container-vote">VOTE
+                              <label class="container-vote">التصويت
                                 <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="Marvel’s Spider-Man 2">
                                 <span class="checkmark"></span>
                               </label>
@@ -521,7 +527,7 @@ window.addEventListener("scroll", reveal);
                             <h1 class="card-header1">Resident Evil 4</h1>
                            
                             <div class="section-vote">
-                              <label class="container-vote">VOTE
+                              <label class="container-vote">التصويت
                                 <input class="radio-vote" type="radio" id="entry.787769497" name="entry.787769497" value="Resident Evil 4">
                                 <span class="checkmark"></span>
                               </label>
@@ -540,7 +546,7 @@ window.addEventListener("scroll", reveal);
                   </div>
 
 
-                  <h2 class="h2 section-title reveal">Best Story</h2>
+                  <h2 class="h2 section-title reveal">أفضل قصة</h2>
   
                   
   <div class="gameyear">
@@ -562,7 +568,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan Wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.67410352" name="entry.67410352" value="Alan Wake II">
               <span class="checkmark"></span>
             </label>
@@ -583,7 +589,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Baldur’s Gate 3</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.67410352" name="entry.67410352" value="Baldur’s Gate 3">
                 <span class="checkmark"></span>
               </label>
@@ -600,7 +606,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Diablo IV</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.67410352" name="entry.67410352" value="Diablo IV">
                 <span class="checkmark"></span>
               </label>
@@ -617,7 +623,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Marvel’s Spider Man 2</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.67410352" name="entry.67410352" value="Marvel’s Spider Man 2">
                 <span class="checkmark"></span>
               </label>
@@ -634,7 +640,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Star Wars Jedi: Survivor</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.67410352" name="entry.67410352" value="Star Wars Jedi: Survivor">
                 <span class="checkmark"></span>
               </label>
@@ -660,7 +666,7 @@ window.addEventListener("scroll", reveal);
   </div>
   
   
-  <h2 class="h2 section-title reveal">Achievement in Directing</h2>
+  <h2 class="h2 section-title reveal">أفضل إخراج</h2>
   
   
   <div class="gameyear">
@@ -682,7 +688,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan Wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.524386357" name="entry.524386357" value="Alan Wake II">
               <span class="checkmark"></span>
             </label>
@@ -703,7 +709,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Baldur’s Gate 3</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.524386357" name="entry.524386357" value="Baldur’s Gate 3">
                 <span class="checkmark"></span>
               </label>
@@ -720,7 +726,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hi-fi Rush</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.524386357" name="entry.524386357" value="Hi-fi Rush">
                 <span class="checkmark"></span>
               </label>
@@ -737,7 +743,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Marvel’s Spider Man 2</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.524386357" name="entry.524386357" value="Marvel’s Spider Man 2">
                 <span class="checkmark"></span>
               </label>
@@ -754,7 +760,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Resident Evil 4</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.524386357" name="entry.524386357" value="Resident Evil 4">
                 <span class="checkmark"></span>
               </label>
@@ -780,7 +786,7 @@ window.addEventListener("scroll", reveal);
   </div>
   
   
-  <h2 class="h2 section-title reveal">Outstanding Performance</h2>
+  <h2 class="h2 section-title reveal">أفضل أداء تمثيلي</h2>
   
   
   <div class="gameyear">
@@ -802,7 +808,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Eyad Nassar</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.149654654" name="entry.149654654" value="Assassin's Creed: Mirage - Eyad Nassar as Bassim Ibn Ishaq">
               <span class="checkmark"></span>
             </label>
@@ -823,7 +829,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Shohreh Aghdashloo</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.149654654" name="entry.149654654" value="Assassin's Creed: Mirage - Shohreh Aghdashloo as Roshan">
                 <span class="checkmark"></span>
               </label>
@@ -840,7 +846,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Ilkka Villi and Matthew Porretta</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.149654654" name="entry.149654654" value="Alan Wake II – Ilkka Villi and Matthew Porretta as Alan Wake">
                 <span class="checkmark"></span>
               </label>
@@ -857,7 +863,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Niel Newbon</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.149654654" name="entry.149654654" value="Baldur’s Gate 3 – Niel Newbon as Astarion">
                 <span class="checkmark"></span>
               </label>
@@ -874,7 +880,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Yuri Lowenthal</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.149654654" name="entry.149654654" value="Mavel’s Spider-Man 2 – Yuri Lowenthal as Peter Parker">
                 <span class="checkmark"></span>
               </label>
@@ -900,7 +906,7 @@ window.addEventListener("scroll", reveal);
   </div>
 
 
-  <h2 class="h2 section-title reveal">TikTok's Gaming Content Star</h2>
+  <h2 class="h2 section-title reveal">نجم محتوى الألعاب على تيكتوك</h2>
   
   
   <div class="gameyear">
@@ -922,7 +928,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">B3shr</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="B3shr">
               <span class="checkmark"></span>
             </label>
@@ -943,7 +949,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Basharkk</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="Basharkk">
                 <span class="checkmark"></span>
               </label>
@@ -960,7 +966,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Dhay</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="Dhay">
                 <span class="checkmark"></span>
               </label>
@@ -977,7 +983,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">irxan</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="irxan">
                 <span class="checkmark"></span>
               </label>
@@ -994,7 +1000,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Mark tube</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="Mark tube">
                 <span class="checkmark"></span>
               </label>
@@ -1013,7 +1019,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Rawaf SA</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="Rawaf SA">
                 <span class="checkmark"></span>
               </label>
@@ -1033,7 +1039,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Sultan 67</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="Sultan 67">
                 <span class="checkmark"></span>
               </label>
@@ -1053,7 +1059,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Virus</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.31704391" name="entry.31704391" value="Virus">
                 <span class="checkmark"></span>
               </label>
@@ -1079,7 +1085,7 @@ window.addEventListener("scroll", reveal);
   </div>
   
   
-  <h2 class="h2 section-title reveal">BEST ARABIC LOCALIZATION</h2>
+  <h2 class="h2 section-title reveal">أفضل تعريب</h2>
   
   
   <div class="gameyear">
@@ -1101,7 +1107,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Assassin's Creed: Mirage</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.1466906387" name="entry.1466906387" value="Assassin's Creed: Mirage">
               <span class="checkmark"></span>
             </label>
@@ -1122,7 +1128,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">EA Sports FC 24</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1466906387" name="entry.1466906387" value="EA Sports FC 24">
                 <span class="checkmark"></span>
               </label>
@@ -1139,7 +1145,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hi-Fi Rush</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1466906387" name="entry.1466906387" value="Hi-Fi Rush">
                 <span class="checkmark"></span>
               </label>
@@ -1156,7 +1162,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hogwarts Legacy</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1466906387" name="entry.1466906387" value="Hogwarts Legacy">
                 <span class="checkmark"></span>
               </label>
@@ -1173,7 +1179,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Resident Evil 4</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1466906387" name="entry.1466906387" value="Resident Evil 4">
                 <span class="checkmark"></span>
               </label>
@@ -1199,7 +1205,7 @@ window.addEventListener("scroll", reveal);
   </div>
   
   
-  <h2 class="h2 section-title reveal">BEST SOUND</h2>
+  <h2 class="h2 section-title reveal">أفضل صوتيات</h2>
   
   
   <div class="gameyear">
@@ -1221,7 +1227,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.1333442882" name="entry.1333442882" value="Alan wake II">
               <span class="checkmark"></span>
             </label>
@@ -1242,7 +1248,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Assassin’s Creed: Mirage</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1333442882" name="entry.1333442882" value="Assassin’s Creed: Mirage">
                 <span class="checkmark"></span>
               </label>
@@ -1259,7 +1265,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Dead space</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1333442882" name="entry.1333442882" value="Dead space">
                 <span class="checkmark"></span>
               </label>
@@ -1276,7 +1282,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hi-Fi Rush</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1333442882" name="entry.1333442882" value="Hi-Fi Rush">
                 <span class="checkmark"></span>
               </label>
@@ -1293,7 +1299,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Resident Evil 4</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1333442882" name="entry.1333442882" value="Resident Evil 4">
                 <span class="checkmark"></span>
               </label>
@@ -1318,7 +1324,7 @@ window.addEventListener("scroll", reveal);
   
   </div>
   
-  <h2 class="h2 section-title reveal">BEST VISUAL DESIGN</h2>
+  <h2 class="h2 section-title reveal">أفضل تصميم بصري</h2>
   
   
   <div class="gameyear">
@@ -1340,7 +1346,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.697061277" name="entry.697061277" value="Alan wake II">
               <span class="checkmark"></span>
             </label>
@@ -1361,7 +1367,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Avatar: Frontiers of Pandora</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.697061277" name="entry.697061277" value="Avatar: Frontiers of Pandora">
                 <span class="checkmark"></span>
               </label>
@@ -1378,7 +1384,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Dead Space</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.697061277" name="entry.697061277" value="Dead Space">
                 <span class="checkmark"></span>
               </label>
@@ -1395,7 +1401,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hogwarts Legacy</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.697061277" name="entry.697061277" value="Hogwarts Legacy">
                 <span class="checkmark"></span>
               </label>
@@ -1412,7 +1418,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Marvel’s Spider Man 2</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.697061277" name="entry.697061277" value="Marvel’s Spider Man 2">
                 <span class="checkmark"></span>
               </label>
@@ -1439,7 +1445,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST ANIMATION</h2>
+  <h2 class="h2 section-title reveal">أفضل تحريك</h2>
   
   
   <div class="gameyear">
@@ -1461,7 +1467,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.1602269621" name="entry.1602269621" value="Alan wake II">
               <span class="checkmark"></span>
             </label>
@@ -1482,7 +1488,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hi-Fi Rush</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1602269621" name="entry.1602269621" value="Hi-Fi Rush">
                 <span class="checkmark"></span>
               </label>
@@ -1499,7 +1505,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hogwarts Legacy</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1602269621" name="entry.1602269621" value="Hogwarts Legacy">
                 <span class="checkmark"></span>
               </label>
@@ -1516,7 +1522,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Marvel’s Spider Man 2</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1602269621" name="entry.1602269621" value="Marvel’s Spider Man 2">
                 <span class="checkmark"></span>
               </label>
@@ -1533,7 +1539,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Super Mario Bros. Wonder</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1602269621" name="entry.1602269621" value="Super Mario Bros. Wonder">
                 <span class="checkmark"></span>
               </label>
@@ -1560,7 +1566,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST TECHNICAL ACHIEVEMENT</h2>
+  <h2 class="h2 section-title reveal">أفضل إنجاز تقني</h2>
   
   
   <div class="gameyear">
@@ -1582,7 +1588,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.1144300274" name="entry.1144300274" value="Alan wake II">
               <span class="checkmark"></span>
             </label>
@@ -1603,7 +1609,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Baldur’s Gate 3</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1144300274" name="entry.1144300274" value="Baldur’s Gate 3">
                 <span class="checkmark"></span>
               </label>
@@ -1620,7 +1626,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">The Legend of Zelda: Tears of the Kingdom</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1144300274" name="entry.1144300274" value="The Legend of Zelda: Tears of the Kingdom">
                 <span class="checkmark"></span>
               </label>
@@ -1637,7 +1643,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Marvel’s Spider Man 2</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1144300274" name="entry.1144300274" value="Marvel’s Spider Man 2">
                 <span class="checkmark"></span>
               </label>
@@ -1654,7 +1660,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Starfield</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1144300274" name="entry.1144300274" value="Starfield">
                 <span class="checkmark"></span>
               </label>
@@ -1682,7 +1688,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST GAME DESIGN</h2>
+  <h2 class="h2 section-title reveal">أفضل تصميم لعبة</h2>
   
   
   <div class="gameyear">
@@ -1704,7 +1710,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.855473423" name="entry.855473423" value="Alan wake II">  
               <span class="checkmark"></span>
             </label>
@@ -1725,7 +1731,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Baldur’s Gate 3</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.855473423" name="entry.855473423" value="Baldur’s Gate 3">
                 <span class="checkmark"></span>
               </label>
@@ -1742,7 +1748,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Resident Evil 4</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.855473423" name="entry.855473423" value="Resident Evil 4">
                 <span class="checkmark"></span>
               </label>
@@ -1759,7 +1765,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">The Legend of Zelda: Tears of the Kingdom</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.855473423" name="entry.855473423" value="The Legend of Zelda: Tears of the Kingdom">
                 <span class="checkmark"></span>
               </label>
@@ -1776,7 +1782,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Lies of P</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.855473423" name="entry.855473423" value="Lies of P">
                 <span class="checkmark"></span>
               </label>
@@ -1794,7 +1800,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Super Mario Bros. Wonder</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.855473423" name="entry.855473423" value="Super Mario Bros. Wonder">
                 <span class="checkmark"></span>
               </label>
@@ -1821,7 +1827,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">MOST INNOVATIVE GAME</h2>
+  <h2 class="h2 section-title reveal">أكثر لعبة مبتكرة</h2>
   
   
   <div class="gameyear">
@@ -1843,7 +1849,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Cocoon</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.324558525" name="entry.324558525" value="Cocoon">
               <span class="checkmark"></span>
             </label>
@@ -1864,7 +1870,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Dave the diver</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.324558525" name="entry.324558525" value="Dave the diver">
                 <span class="checkmark"></span>
               </label>
@@ -1881,7 +1887,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hi-Fi Rush</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.324558525" name="entry.324558525" value="Hi-Fi Rush">
                 <span class="checkmark"></span>
               </label>
@@ -1898,7 +1904,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Viewfinder</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.324558525" name="entry.324558525" value="Viewfinder">
                 <span class="checkmark"></span>
               </label>
@@ -1915,7 +1921,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Super Mario Bros. Wonder</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.324558525" name="entry.324558525" value="Super Mario Bros. Wonder">
                 <span class="checkmark"></span>
               </label>
@@ -1948,7 +1954,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST SHOOTER</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة تصويب</h2>
   
   
   <div class="gameyear">
@@ -1970,7 +1976,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Armored Core VI: Fires of Rubicon</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.298723354" name="entry.298723354" value="Armored Core VI: Fires of Rubicon">
               <span class="checkmark"></span>
             </label>
@@ -1991,7 +1997,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Atomic Heart</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.298723354" name="entry.298723354" value="Atomic Heart">
                 <span class="checkmark"></span>
               </label>
@@ -2008,7 +2014,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Counter-Strike 2</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.298723354" name="entry.298723354" value="Couter-Strike 2">
                 <span class="checkmark"></span>
               </label>
@@ -2025,7 +2031,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">The Finals</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.298723354" name="entry.298723354" value="The Finals">
                 <span class="checkmark"></span>
               </label>
@@ -2042,7 +2048,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Remnant II</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.298723354" name="entry.298723354" value="Remnant II">
                 <span class="checkmark"></span>
               </label>
@@ -2074,7 +2080,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST INDIE</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة مستقلة</h2>
   
   
   <div class="gameyear">
@@ -2096,7 +2102,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Bramble: The Mountain King</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.1783157975" name="entry.1783157975" value="Bramble: The Mountain King">
               <span class="checkmark"></span>
             </label>
@@ -2117,7 +2123,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Cocoon</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1783157975" name="entry.1783157975" value="Cocoon">
                 <span class="checkmark"></span>
               </label>
@@ -2134,7 +2140,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Jusant</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1783157975" name="entry.1783157975" value="Jusant">
                 <span class="checkmark"></span>
               </label>
@@ -2151,7 +2157,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Sea of Stars</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1783157975" name="entry.1783157975" value="Sea of Stars">
                 <span class="checkmark"></span>
               </label>
@@ -2168,7 +2174,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Viewfinder</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.1783157975" name="entry.1783157975" value="Viewfinder">
                 <span class="checkmark"></span>
               </label>
@@ -2201,7 +2207,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST RPG</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة تقمّص أدوار</h2>
   
   
   <div class="gameyear">
@@ -2223,7 +2229,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Baldur's Gate 3</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.634213090" name="entry.634213090" value="Baldur's Gate 3">
               <span class="checkmark"></span>
             </label>
@@ -2244,7 +2250,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Diablo IV</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.634213090" name="entry.634213090" value="Diablo IV">
                 <span class="checkmark"></span>
               </label>
@@ -2261,7 +2267,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Lies of P</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.634213090" name="entry.634213090" value="Lies of P">
                 <span class="checkmark"></span>
               </label>
@@ -2278,7 +2284,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Octopath Traveler II</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.634213090" name="entry.634213090" value="Octopath Traveler II">
                 <span class="checkmark"></span>
               </label>
@@ -2295,7 +2301,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Starfield</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.634213090" name="entry.634213090" value="Starfield">
                 <span class="checkmark"></span>
               </label>
@@ -2328,7 +2334,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST ADVENTURE GAME</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة مغامرة</h2>
   
   
   <div class="gameyear">
@@ -2350,7 +2356,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan Wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.755501037" name="entry.755501037" value="Alan Wake II">
               <span class="checkmark"></span>
             </label>
@@ -2371,7 +2377,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hogwarts Legacy</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.755501037" name="entry.755501037" value="Hogwarts Legacy">
                 <span class="checkmark"></span>
               </label>
@@ -2388,7 +2394,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">The Legend of Zelda: Tears of the Kingdom</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.755501037" name="entry.755501037" value="The Legend of Zelda: Tears of the Kingdom">
                 <span class="checkmark"></span>
               </label>
@@ -2405,7 +2411,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Resident Evil 4</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.755501037" name="entry.755501037" value="Resident Evil 4">
                 <span class="checkmark"></span>
               </label>
@@ -2422,7 +2428,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Star Wars Jedi: Survivor</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.755501037" name="entry.755501037" value="Star Wars Jedi: Survivor">
                 <span class="checkmark"></span>
               </label>
@@ -2457,7 +2463,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST ACTION GAME</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة إثارة وحركة</h2>
   
   
   <div class="gameyear">
@@ -2479,7 +2485,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Armored Core VI: Fires of Rubicon</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.571604815" name="entry.571604815" value="Armored Core VI: Fires of Rubicon">
               <span class="checkmark"></span>
             </label>
@@ -2500,7 +2506,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Ghostrunner 2</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.571604815" name="entry.571604815" value="Ghostrunner 2">
                 <span class="checkmark"></span>
               </label>
@@ -2517,7 +2523,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Hi-Fi Rush</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.571604815" name="entry.571604815" value="Hi-Fi Rush">
                 <span class="checkmark"></span>
               </label>
@@ -2534,7 +2540,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Lies Of P</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.571604815" name="entry.571604815" value="Lies Of P">
                 <span class="checkmark"></span>
               </label>
@@ -2551,7 +2557,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Marvel's Spider-Man 2</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.571604815" name="entry.571604815" value="Marvel's Spider-Man 2">
                 <span class="checkmark"></span>
               </label>
@@ -2583,7 +2589,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST SPORTS GAME</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة رياضية</h2>
   
   
   <div class="gameyear">
@@ -2605,7 +2611,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">The Crew: Motorfest</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.769642271" name="entry.769642271" value="The Crew: Motorfest">
               <span class="checkmark"></span>
             </label>
@@ -2626,7 +2632,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">EA Sports FC 24</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.769642271" name="entry.769642271" value="EA Sports FC 24">
                 <span class="checkmark"></span>
               </label>
@@ -2643,7 +2649,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Forza Motorsport</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.769642271" name="entry.769642271" value="Forza Motorsport">
                 <span class="checkmark"></span>
               </label>
@@ -2660,7 +2666,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Lego 2K Drive</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.769642271" name="entry.769642271" value="Lego 2K Drive">
                 <span class="checkmark"></span>
               </label>
@@ -2677,7 +2683,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">WWE 2K23</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.769642271" name="entry.769642271" value="WWE 2K23">
                 <span class="checkmark"></span>
               </label>
@@ -2712,7 +2718,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST MULTIPLAYER</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة متعددة اللاعبين</h2>
   
   
   <div class="gameyear">
@@ -2734,7 +2740,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Call of Duty Modern Warfare III</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.431913309" name="entry.431913309" value="Call of Duty Modern Warfare III">
               <span class="checkmark"></span>
             </label>
@@ -2755,7 +2761,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Counter-Strike 2</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.431913309" name="entry.431913309" value="Counter-Strike 2">
                 <span class="checkmark"></span>
               </label>
@@ -2772,7 +2778,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Diablo IV</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.431913309" name="entry.431913309" value="Diablo IV">
                 <span class="checkmark"></span>
               </label>
@@ -2789,7 +2795,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">EA Sports FC 24</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.431913309" name="entry.431913309" value="EA Sports FC 24">
                 <span class="checkmark"></span>
               </label>
@@ -2806,7 +2812,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">The Finals</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.431913309" name="entry.431913309" value="The Finals">
                 <span class="checkmark"></span>
               </label>
@@ -2824,7 +2830,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Party Animals</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.431913309" name="entry.431913309" value="Party Animals">
                 <span class="checkmark"></span>
               </label>
@@ -2856,7 +2862,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST HORROR GAME</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة رعب</h2>
   
   
   <div class="gameyear">
@@ -2878,7 +2884,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Alan wake II</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.2116078481" name="entry.2116078481" value="Alan wake II">
               <span class="checkmark"></span>
             </label>
@@ -2899,7 +2905,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Amnesia: The Bunker</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.2116078481" name="entry.2116078481" value="Amnesia: The Bunker">
                 <span class="checkmark"></span>
               </label>
@@ -2916,7 +2922,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Bramble: The Mountain King</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.2116078481" name="entry.2116078481" value="Bramble: The Mountain King">
                 <span class="checkmark"></span>
               </label>
@@ -2933,7 +2939,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Dead space</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.2116078481" name="entry.2116078481" value="Dead space">
                 <span class="checkmark"></span>
               </label>
@@ -2950,7 +2956,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Resident Evil 4</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.2116078481" name="entry.2116078481" value="Resident Evil 4">
                 <span class="checkmark"></span>
               </label>
@@ -2985,7 +2991,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST LOCAL SUPPORT</h2>
+  <h2 class="h2 section-title reveal">أفضل دعم للمنطقة</h2>
   
   
   <div class="gameyear">
@@ -3007,7 +3013,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Call of Duty</h1>
             
           <div class="section-vote">
-            <label class="container-vote">VOTE
+            <label class="container-vote">التصويت
               <input class="radio-vote" type="radio" id="entry.864104851" name="entry.864104851" value="Call of Duty">
               <span class="checkmark"></span>
             </label>
@@ -3028,7 +3034,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Cyberpunk 2077</h1>
   
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.864104851" name="entry.864104851" value="Cyberpunk 2077">
                 <span class="checkmark"></span>
               </label>
@@ -3045,7 +3051,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">EA Sports FC 24</h1>
        
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.864104851" name="entry.864104851" value="EA Sports FC 24">
                 <span class="checkmark"></span>
               </label>
@@ -3062,7 +3068,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">Fortnite</h1>
            
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.864104851" name="entry.864104851" value="Fortnite">
                 <span class="checkmark"></span>
               </label>
@@ -3079,7 +3085,7 @@ window.addEventListener("scroll", reveal);
             <h1 class="card-header1">VALORANT</h1>
           
             <div class="section-vote">
-              <label class="container-vote">VOTE
+              <label class="container-vote">التصويت
                 <input class="radio-vote" type="radio" id="entry.864104851" name="entry.864104851" value="VALORANT">
                 <span class="checkmark"></span>
               </label>
@@ -3106,7 +3112,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST FAMILY GAME</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة عائلية</h2>
   
   
   <div class="gameyear">
@@ -3128,7 +3134,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Lego 2K Drive</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1679920623" name="entry.1679920623" value="Lego 2K Drive">
   <span class="checkmark"></span>
   </label>
@@ -3149,7 +3155,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Party Animals </h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1679920623" name="entry.1679920623" value="Party Animals">
   <span class="checkmark"></span>
   </label>
@@ -3166,7 +3172,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">The Smurfs 2: The Prisoner of the Green Stone</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1679920623" name="entry.1679920623" value="The Smurfs 2: The Prisoner of the Green Stone">
   <span class="checkmark"></span>
   </label>
@@ -3183,7 +3189,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Sonic Superstars</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1679920623" name="entry.1679920623" value="Sonic Superstars">
   <span class="checkmark"></span>
   </label>
@@ -3200,7 +3206,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Super Mario Bros. Wonder</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1679920623" name="entry.1679920623" value="Super Mario Bros. Wonder">
   <span class="checkmark"></span>
   </label>
@@ -3237,7 +3243,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">MOST ANTICIPATED GAME OF 2024</h2>
+  <h2 class="h2 section-title reveal">أكثر لعبة منتظرة في 2024</h2>
   
   
   <div class="gameyear">
@@ -3259,7 +3265,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Black Myth: WuKong</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Black Myth: WuKong">
   <span class="checkmark"></span>
   </label>
@@ -3280,7 +3286,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Dragon's Dogma 2</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Dragon's Dogma 2">
   <span class="checkmark"></span>
   </label>
@@ -3297,7 +3303,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Final Fantasy VII Rebirth</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Final Fantasy VII Rebirth">
   <span class="checkmark"></span>
   </label>
@@ -3314,7 +3320,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Little Nightmares III</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Little Nightmares III">
   <span class="checkmark"></span>
   </label>
@@ -3331,7 +3337,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Rise of the Ronin</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Rise of the Ronin">
   <span class="checkmark"></span>
   </label>
@@ -3349,7 +3355,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Senua’s Saga: Hellblade II</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Senua’s Saga: Hellblade II">
   <span class="checkmark"></span>
   </label>
@@ -3366,7 +3372,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Star Wars: Outlaws</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Star Wars: Outlaws">
   <span class="checkmark"></span>
   </label>
@@ -3383,7 +3389,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Tekken 8</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1056177760" name="entry.1056177760" value="Tekken 8">
   <span class="checkmark"></span>
   </label>
@@ -3409,7 +3415,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST ESPORTS TEAM</h2>
+  <h2 class="h2 section-title reveal">أفضل فريق رياضات إلكترونية</h2>
   
   
   <div class="gameyear">
@@ -3431,7 +3437,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Falcons eSports</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1766948878" name="entry.1766948878" value="Falcons eSports">
   <span class="checkmark"></span>
   </label>
@@ -3452,7 +3458,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Geekay eSports</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1766948878" name="entry.1766948878" value="Geekay eSports">
   <span class="checkmark"></span>
   </label>
@@ -3469,7 +3475,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">NASR eSports</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1766948878" name="entry.1766948878" value="NASR eSports">
   <span class="checkmark"></span>
   </label>
@@ -3486,7 +3492,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">R8 eSports</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1766948878" name="entry.1766948878" value="R8 eSports">
   <span class="checkmark"></span>
   </label>
@@ -3503,7 +3509,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Twisted Minds</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1766948878" name="entry.1766948878" value="Twisted Minds">
   <span class="checkmark"></span>
   </label>
@@ -3539,7 +3545,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST ESPORTS PLAYER</h2>
+  <h2 class="h2 section-title reveal">أفضل لاعب رياضات إلكترونية</h2>
   
   
   <div class="gameyear">
@@ -3561,7 +3567,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Abu Makkah</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.634498036" name="entry.634498036" value="Abu Makkah">
   <span class="checkmark"></span>
   </label>
@@ -3582,7 +3588,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Cipher</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.634498036" name="entry.634498036" value="Cipher">
   <span class="checkmark"></span>
   </label>
@@ -3599,7 +3605,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Mohamed Light</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.634498036" name="entry.634498036" value="Mohamed Light">
   <span class="checkmark"></span>
   </label>
@@ -3616,7 +3622,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Najd Fahad</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.634498036" name="entry.634498036" value="Najd Fahad">
   <span class="checkmark"></span>
   </label>
@@ -3633,7 +3639,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Quartz</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.634498036" name="entry.634498036" value="Quartz">
   <span class="checkmark"></span>
   </label>
@@ -3670,7 +3676,7 @@ window.addEventListener("scroll", reveal);
   
   
   
-  <h2 class="h2 section-title reveal">BEST ESPORTS GAME</h2>
+  <h2 class="h2 section-title reveal">أفضل لعبة رياضات إلكترونية</h2>
   
   
   <div class="gameyear">
@@ -3692,7 +3698,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">EA Sports FC</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1931911691" name="entry.1931911691" value="EA Sports FC">
   <span class="checkmark"></span>
   </label>
@@ -3713,7 +3719,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">League Of Legends</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1931911691" name="entry.1931911691" value="League Of Legends">
   <span class="checkmark"></span>
   </label>
@@ -3730,7 +3736,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">PUBG Mobile</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1931911691" name="entry.1931911691" value="PUBG Mobile">
   <span class="checkmark"></span>
   </label>
@@ -3747,7 +3753,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">Rocket League</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1931911691" name="entry.1931911691" value="Rocket League">
   <span class="checkmark"></span>
   </label>
@@ -3764,7 +3770,7 @@ window.addEventListener("scroll", reveal);
   <h1 class="card-header1">VALORANT</h1>
   
   <div class="section-vote">
-  <label class="container-vote">VOTE
+  <label class="container-vote">التصويت
   <input class="radio-vote" type="radio" id="entry.1931911691" name="entry.1931911691" value="VALORANT">
   <span class="checkmark"></span>
   </label>

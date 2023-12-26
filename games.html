@@ -12,7 +12,7 @@
 
     <!----FAVICON---->
 
-    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/svg+xml">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/svg+xml">
 
 
 
@@ -69,7 +69,7 @@
       <div class="container">
   
         <a href="indexGaming.html" class="nav__logo">
-          <img src="/assets/img/logo-red-hover.svg" alt="">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4foc266Iv1Ja7tR4WRA8JKhdAvqLnzO3EcVt5xM_FVm4WpyJIlUIDZQHeEvZ5BKWh3A51Yrsg2NNMSUdt4sMCAxFtsHk-VI2AvEpNzrdbbhGP4oYzuufkczy7mOgpzaWVy8pjenwNegHapn8wn7Vh1aYI7VuU4_Nzn6yMJ9h8BcCvyyL9tJB0DL1uiNAD/s1600/yellow-logo.png" alt="">
         </a>
   
         <button class="nav-open-btn" data-nav-open-btn>
@@ -91,13 +91,14 @@
           <ul class="navbar-list">
   
             <li>
-              <a  href="indexGaming.html#hero" class="navbar-link">Home</a>
+              <a  href="#hero" class="navbar-link">Home</a>
             </li>
 
             <li>
-              <a  href="indexGaming.html#about" class="navbar-link">About</a>
+              <a  href="#about" class="navbar-link">About</a>
             </li>
   
+            
             
 
 
@@ -123,18 +124,19 @@
             <i class="fa fa-chevron-down"></i>
 
 
+          
   
             <li>
               <a  href="jury.html" class="navbar-link">Jury</a>
             </li>
   
             <li>
-              <a  href="indexGaming.html#contactus" class="navbar-link">Contact Us</a>
+              <a  href="#contactus" class="navbar-link">Contact Us</a>
             </li>
 
 
             <li>
-              <a  href="gamesAr.html" class="navbar-link-ar">العربية </a>             </a>
+              <a  href="indexGamingAr.html" class="navbar-link-ar">العربية </a>             </a>
             </li>
   
   
@@ -144,7 +146,7 @@
   
             <li>
               <a href="https://twitter.com/ArabGameAwards" target="_blank" class="footer-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <div class="twt-icon" ></div>
               </a>
             </li>
 
@@ -162,6 +164,7 @@
                 <ion-icon name="logo-youtube"></ion-icon>
               </a>
             </li>
+
 
             <li>
               <a href="https://www.tiktok.com/@arabgameawards" target="_blank" class="footer-social-link">
@@ -202,6 +205,19 @@
       </div>
   
     </header>
+
+
+    
+  <script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+
+
+  </script>
 
       <main>
         <article>
@@ -245,7 +261,7 @@
       
              
 
-              <section class="contactus" id="contactus">
+              <section class="team" id="team">
                 <div class="container"
                 
                 <div class="confetti">
@@ -283,7 +299,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">It Takes Two</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -296,7 +312,7 @@
                       
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/forza.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/forza.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Forza Horizon 5</h1>
                             <p class="card-text">
@@ -309,7 +325,7 @@
 
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Deathloop</h1>
                             <p class="card-text">
@@ -322,7 +338,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite</h1>
                             <p class="card-text">
@@ -335,7 +351,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/marvel.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marvel.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Marvel's Guardians of the Galaxy</h1>
                             <p class="card-text">
@@ -349,7 +365,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/metroid.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/metroid.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Metroid Dread</h1>
                             <p class="card-text">
@@ -362,7 +378,7 @@
 					  
 					   <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/psychonauts.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/psychonauts.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Psychonauts 2</h1>
                             <p class="card-text">
@@ -375,7 +391,7 @@
 					  
 					   <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -388,7 +404,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/village.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/village.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Resident Evil Village</h1>
                             <p class="card-text">
@@ -401,7 +417,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/returnal.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/returnal.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Returnal</h1>
                             <p class="card-text">
@@ -426,7 +442,7 @@
                         <div class="card">
 
 
-                          <img class="card-img" src="../assets/img/forza.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/forza.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Forza Horizon 5</h1>
                             <p class=" h1 card-text gradient-text-winner" >
@@ -441,7 +457,7 @@
 
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="card-text">
@@ -454,7 +470,7 @@
 
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite</h1>
                             <p class="card-text">
@@ -467,7 +483,7 @@
 					  
 					    <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/little.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/little.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Little Nightmares II</h1>
                             <p class="card-text">
@@ -480,7 +496,7 @@
 					  
 					                        <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/village.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/village.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Resident Evil Village </h1>
                             <p class="card-text">
@@ -493,7 +509,7 @@
 					  
 					                      <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/returnal.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/returnal.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Returnal</h1>
                             <p class="card-text">
@@ -522,7 +538,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/back4.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/back4.jpg" alt="Rome" />
                           <div class="card-content">
                             <h2 class="card-header1">Back 4 Blood </h1>
                             <p class="card-text">
@@ -546,7 +562,7 @@
 
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Deathloop</h1>
                             <p class="card-text">
@@ -559,7 +575,7 @@
 					
 					 <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/farcry6.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/farcry6.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Far Cry 6 </h1>
                             <p class="card-text">
@@ -573,7 +589,7 @@
 					
 					 <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite </h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -599,7 +615,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -611,7 +627,7 @@
                       
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">It Take Two</h1>
                             <p class="card-text">
@@ -624,7 +640,7 @@
 
                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/psychonauts.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/psychonauts.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Psychonauts 2</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -637,7 +653,7 @@
 					  
 					                        <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/little.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/little.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Little Nightmares 2</h1>
                             <p class="card-text">
@@ -650,7 +666,7 @@
 					  
 					                        <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/metroid.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/metroid.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Metroid Dread</h1>
                             <p class="card-text">
@@ -678,7 +694,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/deathdoor.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathdoor.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Death's Door</h1>
                             <p class="card-text">
@@ -691,7 +707,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="card-text">
@@ -704,7 +720,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite</h1>
                             <p class="card-text">
@@ -717,7 +733,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/marvel.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marvel.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Marvel's Guardians of the Galaxy</h1>
                             <p class="card-text">
@@ -730,7 +746,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/nier.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/nier.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">NieR Replicant</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -750,7 +766,7 @@
                     <div class="grid_winners">
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="card-text">
@@ -762,7 +778,7 @@
 					 
 					                       <div class="grid-item-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/forza.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/forza.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Forza Horizon 5</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -775,7 +791,7 @@
 					 
 					                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/kena.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/kena.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Kena: Bridge of Spirits</h1>
                             <p class="card-text">
@@ -787,7 +803,7 @@
 					 
 					                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/marvel.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marvel.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Marvel's Guardians of the Galaxy</h1>
                             <p class="card-text">
@@ -799,7 +815,7 @@
 					 
 					                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/psychonauts.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/psychonauts.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Psychonauts 2</h1>
                             <p class="card-text">
@@ -811,7 +827,7 @@
 					 
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -837,7 +853,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="card-text">
@@ -849,7 +865,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -862,7 +878,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite</h1>
                             <p class="card-text">
@@ -874,7 +890,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/returnal.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/returnal.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Returnal</h1>
                             <p class="card-text">
@@ -886,7 +902,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/forza.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/forza.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Forza Horizon 5</h1>
                             <p class="card-text">
@@ -905,7 +921,7 @@
                     <div class="grid_winners">
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/12mins.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/12mins.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">12 Minutes</h1>
                             <p class="card-text">
@@ -917,7 +933,7 @@
 					 
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="card-text">
@@ -928,7 +944,7 @@
 					 </div> 
                       <div class="grid-item-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">It Takes Two</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -939,7 +955,7 @@
                         </div>
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/psychonauts.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/psychonauts.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Psychonauts 2</h1>
                             <p class="card-text">
@@ -950,7 +966,7 @@
 					 </div> 
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -961,7 +977,7 @@
 					 </div> 
                       <div class="grid-item">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/returnal.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/returnal.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Returnal</h1>
                             <p class="card-text">
@@ -986,7 +1002,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite</h1>
                             <p class="card-text">
@@ -998,7 +1014,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="card-text">
@@ -1010,7 +1026,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">it Takes Two </h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1023,7 +1039,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/psychonauts.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/psychonauts.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Psychonauts 2</h1>
                             <p class="card-text">
@@ -1035,7 +1051,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -1054,7 +1070,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/12mins.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/12mins.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">12Minutes</h1>
                             <p class="card-text">
@@ -1066,7 +1082,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathdoor.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathdoor.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Death's Door</h1>
                             <p class="card-text">
@@ -1078,7 +1094,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/forgotten.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/forgotten.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">The Forgotten City</h1>
                             <p class="card-text">
@@ -1090,7 +1106,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/inscr.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/inscr.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Inscryption</h1>
                             <p class="card-text">
@@ -1102,7 +1118,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/kena.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/kena.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Kena: Bridge of Spirits</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1123,7 +1139,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">It Takes Two</h1>
                             <p class="card-text">
@@ -1134,7 +1150,7 @@
 					 </div> 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/kena.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/kena.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Kena: Bridge of Spirits</h1>
                             <p class="card-text">
@@ -1146,7 +1162,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/marvel.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marvel.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Marvel's Guardians of the Galaxy</h1>
                             <p class="card-text">
@@ -1158,7 +1174,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank Rift Apart</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1171,7 +1187,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/village.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/village.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Resident Evil Village</h1>
                             <p class="card-text">
@@ -1193,7 +1209,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/back4.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/back4.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Back 4 Blood</h1>
                             <p class="card-text">
@@ -1205,7 +1221,7 @@
 
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/forza.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/forza.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Forza Horizon 5</h1>
                             <p class="card-text">
@@ -1217,7 +1233,7 @@
 
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite</h1>
                             <p class="card-text">
@@ -1229,7 +1245,7 @@
 
                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">It Takes Two</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1242,7 +1258,7 @@
 
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/knock.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/knock.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Knockout City</h1>
                             <p class="card-text">
@@ -1263,7 +1279,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/bravely.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/bravely.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Bravely Default II</h1>
                             <p class="card-text">
@@ -1275,7 +1291,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/monster.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/monster.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Monster Hunter Rise</h1>
                             <p class="card-text">
@@ -1287,7 +1303,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/NewWorld.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/NewWorld.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">New World</h1>
                             <p class="card-text">
@@ -1299,7 +1315,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/scarlet.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/scarlet.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Scarlet Nexus</h1>
                             <p class="card-text">
@@ -1311,7 +1327,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Tales.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Tales.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Tales of Arise</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1331,7 +1347,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">it Takes Two</h1>
                             <p class="card-text">
@@ -1343,7 +1359,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/marvel.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marvel.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Marvel's Guardians of the Galaxy</h1>
                             <p class="card-text">
@@ -1355,7 +1371,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/psychonauts.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/psychonauts.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Psychonauts 2</h1>
                             <p class="card-text">
@@ -1367,7 +1383,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/village.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/village.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Resident Evil Village</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1380,7 +1396,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">BRatchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -1399,7 +1415,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP </h1>
                             <p class="card-text">
@@ -1411,7 +1427,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/marvel.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marvel.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Marvel's Guardians of the Galaxy</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1424,7 +1440,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/farcry6.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/farcry6.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Far Cry 6 </h1>
                             <p class="card-text">
@@ -1436,7 +1452,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/metroid.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/metroid.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Metroid Dread </h1>
                             <p class="card-text">
@@ -1448,7 +1464,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/returnal.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/returnal.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Returnal</h1>
                             <p class="card-text">
@@ -1468,7 +1484,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/farcry6.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/farcry6.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Far Cry 6</h1>
                             <p class="card-text">
@@ -1480,7 +1496,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1494,7 +1510,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -1507,7 +1523,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/returnal.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/returnal.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Returnal</h1>
                             <p class="card-text">
@@ -1520,7 +1536,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/village.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/village.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Resident Evil Village </h1>
                             <p class="card-text">
@@ -1543,7 +1559,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/FIFA22.jpeg" alt="Rome" />
+                          <img class="card-img" src="assets/img/FIFA22.jpeg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">FIFA 22</h1>
                             <p class="card-text">
@@ -1555,7 +1571,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/hotwheels.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/hotwheels.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Hot Wheels Unleashed</h1>
                             <p class="card-text">
@@ -1567,7 +1583,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/forza.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/forza.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Forza Horizon 5</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1580,7 +1596,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/knock.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/knock.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Knockout City</h1>
                             <p class="card-text">
@@ -1592,7 +1608,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/riders.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/riders.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Riders Republic</h1>
                             <p class="card-text">
@@ -1614,7 +1630,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/halo.png" alt="Rome" />
+                          <img class="card-img" src="assets/img/halo.png" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Halo Infinite</h1>
                             <p class="card-text">
@@ -1626,7 +1642,7 @@
 					 
 					 <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/deathloop.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/deathloop.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">DEATHLOOP</h1>
                             <p class="card-text">
@@ -1638,7 +1654,7 @@
 					 
 					 <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">It Takes Two</h1>
                             <p class="card-text">
@@ -1650,7 +1666,7 @@
 					 
 					 <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/marvel.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marvel.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Marvel's Guardians of the Galaxy</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1663,7 +1679,7 @@
 					 
 					 <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/village.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/village.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Resident Evil Village</h1>
                             <p class="card-text">
@@ -1754,7 +1770,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Dinga.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Dinga.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Dinga Bakaba</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1767,7 +1783,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Josephfares.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Josephfares.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Joseph Fares</h1>
                             <p class="card-text">
@@ -1779,7 +1795,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/jean.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/jean.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Jean-Francois Dugas</h1>
                             <p class="card-text">
@@ -1791,7 +1807,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Tim.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Tim.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Tim Schafer</h1>
                             <p class="card-text">
@@ -1803,7 +1819,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Morima.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Morima.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Morimasa Sato</h1>
                             <p class="card-text">
@@ -1822,7 +1838,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Apex.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Apex.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Apex Legends</h1>
                             <p class="card-text">
@@ -1834,7 +1850,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ffxiv.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ffxiv.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Final Fantasy XIV Online</h1>
                             <p class="card-text">
@@ -1846,7 +1862,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Fortnite.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Fortnite.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Fortnite</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1859,7 +1875,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Genshin.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Genshin.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Genshin Impact</h1>
                             <p class="card-text">
@@ -1871,7 +1887,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Warzone.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Warzone.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Call of Duty: Warzone</h1>
                             <p class="card-text">
@@ -1892,7 +1908,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/marios.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/marios.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Mario Party Superstars</h1>
                             <p class="card-text">
@@ -1904,7 +1920,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ratchet.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ratchet.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Ratchet and Clank: Rift Apart</h1>
                             <p class="card-text">
@@ -1916,7 +1932,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/mario3d.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/mario3d.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Super Mario 3D World + Bowser's Fury</h1>
                             <p class="card-text">
@@ -1928,7 +1944,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/takestwo.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/takestwo.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">It Takes Two </h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1941,7 +1957,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Wario.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Wario.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">WarioWare: Get it Together</h1>
                             <p class="card-text">
@@ -1964,7 +1980,7 @@
                     <div class="grid_winners">
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/ANB.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/ANB.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Anubis Gaming</h1>
                             <p class="card-text">
@@ -1976,7 +1992,7 @@
 					 
 					                       <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Falcons.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Falcons.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Falcons Esports</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -1989,7 +2005,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/GXR.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/GXR.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Galaxy Racer</h1>
                             <p class="card-text">
@@ -2001,7 +2017,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/raad.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/raad.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Team RA'AD</h1>
                             <p class="card-text">
@@ -2013,7 +2029,7 @@
 					 
 					                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/yalla.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/yalla.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Yalla Esports</h1>
                             <p class="card-text">
@@ -2039,7 +2055,7 @@
                         
                         <div class="card">
 
-                          <img class="card-img" src="../assets/img/Dying2.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Dying2.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Dying Light 2 </h1>
                             <p class="card-text">
@@ -2051,7 +2067,7 @@
                       
                       <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Elden.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Elden.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Elden Ring</h1>
                             <p class="card-text">
@@ -2065,7 +2081,7 @@
 					  
 					  <div class="grid-item2-winner">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Ragnarok.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Ragnarok.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">God of War: Ragnarok</h1>
                             <p class="h1 card-text gradient-text-winner">
@@ -2078,7 +2094,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/gotham.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/gotham.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Gotham Knights</h1>
                             <p class="card-text">
@@ -2092,7 +2108,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Horizon.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Horizon.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Horizon II: Forbidden West</h1>
                             <p class="card-text">
@@ -2105,7 +2121,7 @@
 					  
 					   <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/starfield.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/starfield.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header1">Starfield</h1>
                             <p class="card-text">
@@ -2118,7 +2134,7 @@
 					  
 					   <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/stalker.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/stalker.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">S.T.A.L.K.E.R 2: Heart of Chernobyl</h1>
                             <p class="card-text">
@@ -2131,7 +2147,7 @@
 					  
 					  <div class="grid-item2">
                         <div class="card">
-                          <img class="card-img" src="../assets/img/Zelda.jpg" alt="Rome" />
+                          <img class="card-img" src="assets/img/Zelda.jpg" alt="Rome" />
                           <div class="card-content">
                             <h1 class="card-header">Zelda Breath of the Wild 2</h1>
                             <p class="card-text">
@@ -2183,24 +2199,20 @@
     
             <div class="footer-brand-wrapper">
     
-              <a href="#" class="logo">
-                <img src="../assets/img/logo-red-hover.svg" alt="logo">
-              </a>
+              
     
               <div class="footer-menu-wrapper">
     
 
                 <!--
-
-
-                  <ul class="footer-menu-list">
+                <ul class="footer-menu-list">
     
                   <li>
                     <a href="#hero" class="footer-menu-link">Home</a>
                   </li>
     
                   <li>
-                    <a href="indexGaming.html#about" class="footer-menu-link">About</a>
+                    <a href="#about" class="footer-menu-link">About</a>
                   </li>
     
                   
@@ -2210,28 +2222,27 @@
                   </li>
 
                   <li>
-                    <a href="games.html" class="footer-menu-link">Games</a>
+                    <a href="games.html"  class="footer-menu-link">Winners</a>
                   </li>
     
                   
     
                   <li>
-                    <a href="indexGaming.html#contactus" class="footer-menu-link">Contact</a>
+                    <a href="#contactus" class="footer-menu-link">Contact</a>
                   </li>
     
                 </ul>
 
-                -->
-                
-				
-			 <div class="footer-input-wrapper">
+                 -->
+    
+                <div class="footer-input-wrapper">
                   
 
 
 
 
-                 
-    
+                  <a  class="email_contact"></a>
+
                   <!--
                 <form action="" class="footer__form" id="contact-form">
 
@@ -2262,10 +2273,12 @@
               <ul class="quicklink-list">
     
                 <li>
-                  <a href="indexGaming.html#gears"  class="quicklink-item">Faq</a>
+                  <a href="#gears" class="quicklink-item">Faq</a>
                 </li>
     
-
+                
+    
+              
     
                 <li>
                   <a href="privacy.html" class="quicklink-item">Privacy</a>
@@ -2278,7 +2291,7 @@
                 
                 <li>
                   <a href="https://twitter.com/ArabGameAwards" target="_blank" class="footer-social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
+                    <div class="twt-icon" ></div>
                   </a>
                 </li>
 
@@ -2313,7 +2326,7 @@
         <div class="footer-bottom">
           <div class="container">
             <p class="copyright">
-              Copyright &copy; 2022 Arab Games Award. all rights reserved | developed by <a href="https://twitter.com/EvoliteStudio" target="_blank"> Evolite Studio </a>
+              Copyright &copy; 2024 The Arab Games Award. all rights reserved | developed by <a href="https://twitter.com/EvoliteStudio" target="_blank"> Evolite Studio </a>
             </p>
     
             
@@ -2321,6 +2334,7 @@
         </div>
     
       </footer>
+
 
 
 

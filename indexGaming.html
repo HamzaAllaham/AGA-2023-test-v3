@@ -264,7 +264,7 @@
 
 
                
-
+              
              
     
               <div class="btn-group">
@@ -280,40 +280,43 @@
 
                 </a>
 
-                
-                <ul class="footer-social-list">
+                <div class="count-social">
+                  <ul class="footer-social-list">
     
 
                   
                 
-                  <li>
-                    <a href="https://twitter.com/ArabGameAwards" target="_blank" class="footer-social-link">
-                      <div class="twt-icon" ></div>
-                    </a>
-                  </li>
+                    <li>
+                      <a href="https://twitter.com/ArabGameAwards" target="_blank" class="footer-social-link">
+                        <div class="twt-icon" ></div>
+                      </a>
+                    </li>
+    
+    
+                    <li>
+                      <a href="https://www.instagram.com/arabgameawards/" target="_blank" class="footer-social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                    </li>
+        
+                    
+        
+                    <li>
+                      <a href="https://www.youtube.com/@arabgameawards/videos" target="_blank" class="footer-social-link">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                      </a>
+                    </li>
   
-  
-                  <li>
-                    <a href="https://www.instagram.com/arabgameawards/" target="_blank" class="footer-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-      
-                  
-      
-                  <li>
-                    <a href="https://www.youtube.com/@arabgameawards/videos" target="_blank" class="footer-social-link">
-                      <ion-icon name="logo-youtube"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.tiktok.com/@arabgameawards" target="_blank" class="footer-social-link">
-                      <ion-icon name="logo-tiktok"></ion-icon>
-                    </a>
-                  </li>
-      
-                </ul>
+                    <li>
+                      <a href="https://www.tiktok.com/@arabgameawards" target="_blank" class="footer-social-link">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                      </a>
+                    </li>
+        
+                  </ul>
+                  <div id="countdown"></div>
+                </div>
+               
 
              
 
@@ -406,7 +409,36 @@
 
 
 
+            
 
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("January 26, 2024 00:00:00").getTime();
+          
+              // Update the countdown every 1 second
+              var x = setInterval(function() {
+                // Get the current date and time
+                var now = new Date().getTime();
+          
+                // Calculate the remaining time
+                var distance = countDownDate - now;
+          
+                // Calculate days, hours, minutes, and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+                // Display the countdown
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+          
+                // If the countdown is over, display a message
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("countdown").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script>
 
 
     
@@ -806,6 +838,8 @@ window.addEventListener("scroll", reveal);
                 
                 <div class="contact-form-background">
                   <h2 class="form-title">Contact us</h2>
+                  <script type="text/javascript">var sumbitted= false</script>
+                  <iframe name="Confirmation" id="Confirmation" style="display: none;" onload="if (sumbitted){window.location='confirmed-vote-reply.html';}"></iframe>
                 <form id="myForm-contact" method="post" target="Confirmation" onsubmit="sumbitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSdhWv0SM_98LqvRHyR9J6lLWc6qbpxvCEWXv2gqUetcaOHDnQ/formResponse">
                   <input name="entry.167280167" type="email" placeholder="E-mail" required>
                   <input name="entry.2084437870" type="text" placeholder="Subject" required>
