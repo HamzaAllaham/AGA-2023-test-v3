@@ -652,6 +652,8 @@ height: 60px;
     right: -300px;
     width: 100%;
     max-width: 300px;
+    background-color: hsl(0, 0%, 0%);
+  
     height: 100%;
     box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.5);
     visibility: hidden;
