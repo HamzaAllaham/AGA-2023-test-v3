@@ -1027,7 +1027,11 @@ height: 60px;
 
 
 
-
+.center-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .grid_winners{
     display: flex;
@@ -1574,7 +1578,9 @@ height: 60px;
     .partner-images {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 30px;
   cursor: default ;
   pointer-events: none;
   user-drag: none; /* Disable image dragging in some browsers */
@@ -1582,7 +1588,7 @@ height: 60px;
 }
 
 .partner-images img {
-  margin: 0 70px; /* Adjust margin between partner images */
+  
   cursor: default ;
   pointer-events: none;
   user-drag: none; /* Disable image dragging in some browsers */
@@ -1765,7 +1771,7 @@ height: 60px;
   .about__stats{
     display: grid;
     justify-content: center;
-    gap: 50px;
+    
    
   }
 
@@ -1773,9 +1779,10 @@ height: 60px;
 
 
 
+
   .a-box {
     display: inline-block;
-    width: 200px;
+    width: 160px;
     text-align: center;
     margin: 0.5rem;
     margin-top: 20px;
@@ -1786,9 +1793,7 @@ height: 60px;
       height: 140px;
       width: 140px;
       overflow: hidden;
-      border-radius: 20px;
-      border-style: solid;
-      border-color: #ffffff;
+      border-radius: 20px 20px 20px 20px;
       display: inline-block;
   }
   
@@ -1801,6 +1806,7 @@ height: 60px;
   .inner-skew {
       display: inline-block;
       border-radius: 20px;
+      
       padding: 0px;
       
       font-size: 0px;
@@ -1818,19 +1824,18 @@ height: 60px;
     margin: -120px 0px 0px 0px;
     line-height: 19px;
     font-size: 14px;
-    height: 240px;
+    height: 250px;
   }
   
   .text-container h3 {
     margin: 20px 0px 10px 0px;
     color: var(--orange);
-    font-size: 25px;
-    
+    font-size: 18px;
   }
 
   .about__description{
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 12px;
   }
   
   
@@ -2529,6 +2534,10 @@ height: 60px;
     display: flex;
     flex-direction: column;
   }
+  .center-form{
+    max-width: 100%;
+    width: 300px;
+  }
 
 }
 
@@ -2552,6 +2561,9 @@ height: 60px;
 
   }
 
+  
+
+
   .partners{
     height: 200px;
     width: 150px;
@@ -2571,7 +2583,13 @@ height: 60px;
   }
 
  
-  
+  .center-form{
+    max-width: 400px;
+    width: max-content;
+  }
+  .a-box{
+    width: 100%;
+  }
 
 }
 
@@ -2683,6 +2701,12 @@ height: 60px;
 
   .gallery-list li { min-width: 80%; }
 
+
+  .center-form{
+    max-width: 100%;
+    width: 500px;
+  }
+
 }
 
 
@@ -2710,9 +2734,14 @@ height: 60px;
 
   }
 
-
+.center-form{
+  max-width: 100%;
+  width: max-content;
+}
   
-
+.fixed-partners {
+  width: 100%;
+}
 
 
   /**
@@ -2939,6 +2968,15 @@ height: 60px;
 
     --section-padding: 100px;
 
+  }
+
+  .partner-images{
+    gap: 100px;
+  }
+
+  .center-form{
+    max-width: 100%;
+    width: max-content;
   }
 
   .notification{
