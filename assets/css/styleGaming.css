@@ -1418,7 +1418,8 @@ height: 60px;
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
   }
 
 
@@ -2469,6 +2470,10 @@ height: 60px;
   
   
   }
+
+  .note-btn {
+    width: 50%; /* Adjust width for smaller screens */
+}
 
 
   .header .container {

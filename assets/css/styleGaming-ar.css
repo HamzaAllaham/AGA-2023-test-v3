@@ -2529,6 +2529,10 @@ height: 60px;
   
   }
 
+  .note-btn {
+    width: 90%; /* Adjust width for smaller screens */
+}
+
 
   .header .container {
     padding: 15px;
