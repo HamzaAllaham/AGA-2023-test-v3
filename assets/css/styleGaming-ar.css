@@ -1324,6 +1324,7 @@ height: 60px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
   }
   
   .hero-subtitle {
