@@ -681,7 +681,7 @@ height: 60px;
     padding: 10px 25px;
     font-weight: var(--fw-500);
     transition: 0.6s ;
-    font-family: var(--ff-tajawal);
+   font-family: var(--ff-tajawal);
   }
 
   .navbar-link-ar {
@@ -3185,7 +3185,8 @@ height: 60px;
     color: white;
     padding-block: 30px;
     border: none;
-    font-family: var(--ff-oswald);
+    font-family: var(--ff-tajawal);
+    font-weight: 800;
     text-transform: uppercase;
     transition: 0.6s;
     letter-spacing: 1px;
