@@ -218,7 +218,7 @@ height: 60px;
   box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
   opacity: 0;
   z-index: 10;
-  border-radius: 20px 300px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   transition: 0.3s;
   
 }
