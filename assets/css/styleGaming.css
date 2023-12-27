@@ -1309,13 +1309,14 @@ height: 60px;
     background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnapm5GFHX6z-szs_E0TDZD-RFPabyM969ULx94B7gVnG6SmgLRv9Yve4peHnCxfzy-GpcnOc54JTRh-dyNOb_dsyDjBxd-oJ-0YALdsKAdm_l34ArqY2sLSPeknbsSCuxFWJZvT10TCDg4o9_nZJRSxnVsGzJ2qKpY_nD7wp70jPU4J7066kt4Hzpdu5o/s16000/2222.png") no-repeat;
     background-size: cover;
     background-position: top center;
-    
+    padding: var(--section-padding) 0;
     height: 100vh;
     max-height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
   }
   
   .hero-subtitle {
