@@ -2628,6 +2628,11 @@ height: 60px;
   .btn-group{
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .footer-social-list{
+    justify-content: flex-end;
   }
   .center-form{
     max-width: 100%;
@@ -2714,10 +2719,7 @@ height: 60px;
     --fs-2: 45px;
 
   }
-  .vote-btn{
-    margin-top: 0px;
   
-  }
   .footer-social-list{
     margin-top: 10px;
   }
@@ -2741,8 +2743,13 @@ height: 60px;
 
   .btn-group{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
 
+  .vote-btn{
+    margin-top: 10px;
+    margin-right: 10px;
   }
 
   .footer-social-list{
@@ -2840,6 +2847,16 @@ height: 60px;
     --fs-1: 50px;
     --fs-3: 36px;
 
+  }
+
+  .btn-group{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .footer-social-list{
+    justify-content:center;
   }
 
   .vote-btn{
