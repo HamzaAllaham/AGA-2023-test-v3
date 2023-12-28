@@ -1085,7 +1085,7 @@ height: 60px;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     transition: 0.2s;
     width: 17rem;
-    height: 24rem;
+    height: 24.5rem;
   }
 
 
@@ -1169,7 +1169,7 @@ height: 60px;
   padding: 15px;
   border-radius: 15px;
   border: 2px solid rgb(194, 194, 194);
-  margin-top: 20px;
+  margin-top: 10px;
   align-items: center;
   align-content: center;
 }

@@ -573,8 +573,7 @@ height: 60px;
     left: 0;
     width: 100%;
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+   
     padding-block: 20px;
     transition: 0.6s;
     z-index: 4;
@@ -640,6 +639,7 @@ height: 60px;
     right: -300px;
     width: 100%;
     max-width: 300px;
+    background-color: hsl(0, 0%, 0%);
     height: 100%;
     box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.5);
     visibility: hidden;
@@ -1093,7 +1093,7 @@ height: 60px;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     transition: 0.2s;
     width: 15rem;
-    height: 24rem;
+    height: 24.5rem;
   }
 
 
@@ -1178,6 +1178,7 @@ height: 60px;
   border-radius: 15px;
   border: 2px solid rgb(194, 194, 194);
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
   .container-vote {
