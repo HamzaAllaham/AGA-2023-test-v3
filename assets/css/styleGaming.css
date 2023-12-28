@@ -973,7 +973,7 @@ height: 60px;
     }
     100%{
       opacity: 0;
-      transform: scale(1.8);
+      transform: scale(2);
     }
   }
 
@@ -1351,7 +1351,9 @@ height: 60px;
 
 
   .calander-btn {
-    background: #EC0869;
+    background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid #EC0869;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
@@ -1377,8 +1379,9 @@ height: 60px;
   
   .calander-btn:hover,
   .calander-btn:active {
-    background-color: #b8165c;
+    background-color: initial;
     background-position: 0 0;
+    color: #FF4742;
     transition: 0.3s;
   }
   
@@ -1423,10 +1426,10 @@ height: 60px;
   }
 
 
+
+
   .vote-btn {
-    background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: #EC0869;
     border: 1px solid #EC0869;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
@@ -1441,7 +1444,6 @@ height: 60px;
     min-height: 40px;
     outline: 0;
     padding: 12px 14px;
-    margin-right: 20px;
     text-align: center;
     text-rendering: geometricprecision;
     text-transform: none;
@@ -1449,14 +1451,13 @@ height: 60px;
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-    width: 200px;
+    width: 170px;
   }
   
   .vote-btn:hover,
   .vote-btn:active {
-    background-color: initial;
+    background-color: #b8165c;
     background-position: 0 0;
-    color: #FF4742;
     transition: 0.3s;
   }
   
@@ -2244,12 +2245,12 @@ height: 60px;
     background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWDBqerEdMd3bK8JGiynFkeolQicM27wWeOdaF8O0YWsi0MKVxa6Aj7mpht4iOj6kVMzWkNhmv6-SOuwPLzgyVZmw1RJarZekklM-kiNukRIZaAN2eA_1autOs8j5chGLfYuLUr6SnPA0pYcNR9-0PGPBWOzPcRYc1DcSTthALGjb1tgCvdrRap93f4Kfr/s16000/Frame%20833369222.png") no-repeat;
     background-size: cover;
     background-position: center;
-    padding: var(--section-padding) 0;
+    padding:40px;
   }
   
   .footer-brand-wrapper {
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     border-bottom: 1px solid hsl(220, 14%, 8%);
     margin-bottom: 50px;
   }
@@ -2372,7 +2373,7 @@ height: 60px;
   .footer-social-link:is(:hover, :focus) { color: var(--orange); }
   
   .footer-bottom {
-    padding: 25px 0;
+    padding: 10px 0;
     background: rgb(255, 255, 255);
     text-align: center;
     backdrop-filter: blur(100px);
@@ -3362,7 +3363,7 @@ height: 60px;
   }
 
   .clouds img{
-    height: 250px;
+    height: 150px;
   }
 
   .hero-title {
