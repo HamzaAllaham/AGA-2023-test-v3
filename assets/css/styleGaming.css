@@ -1614,24 +1614,22 @@ height: 60px;
 
     /* Partner images styles */
     .partner-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
-  cursor: default ;
-  pointer-events: none;
-  user-drag: none; /* Disable image dragging in some browsers */
-  user-select: none;
-}
-
-.partner-images img {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      cursor: default ;
+      user-drag: none; /* Disable image dragging in some browsers */
+      user-select: none;
+    }
   
-  cursor: default ;
-  pointer-events: none;
-  user-drag: none; /* Disable image dragging in some browsers */
-  user-select: none;
-}
+  .partner-images img {
+   
+    cursor: pointer ;
+    user-drag: none; /* Disable image dragging in some browsers */
+    user-select: none;
+  }
 
 #sp1 {
   max-height: 60px;

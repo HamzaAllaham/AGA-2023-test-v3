@@ -1660,15 +1660,13 @@ height: 60px;
     align-items: center;
     gap: 30px;
     cursor: default ;
-    pointer-events: none;
     user-drag: none; /* Disable image dragging in some browsers */
     user-select: none;
   }
 
 .partner-images img {
  
-  cursor: default ;
-  pointer-events: none;
+  cursor: pointer ;
   user-drag: none; /* Disable image dragging in some browsers */
   user-select: none;
 }
