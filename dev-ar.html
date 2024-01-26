@@ -65,8 +65,6 @@
     
      <!----HEADER---->
 
-    
-
 
      <header class="header">
 
@@ -103,7 +101,7 @@
               <a  href="indexGaming-ar.html#hero" class="navbar-link">الرئيسية</a>
             </li>
 
-          
+            
   
             
             
@@ -150,7 +148,7 @@
 
 
             <li>
-              <a  href="confirmed-vote.html" class="navbar-link-ar">English </a>             </a>
+              <a  href="dev.html" class="navbar-link-ar">English </a>             </a>
             </li>
   
   
@@ -222,6 +220,16 @@
 
 
 
+    <script type="text/javascript">
+
+      window.addEventListener("scroll", function(){
+  
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+  
+  
+    </script>
 
 
       <main>
@@ -243,7 +251,7 @@
 
 
 
-                <p class="hero-subtitle">تم الإرسال بنجاح</p>
+                <p class="hero-subtitle">أبرز المطورين العرب✨ </p>
     
               <h1 class="h1 hero-title gradient-text"> &#160</h1>
 
@@ -257,35 +265,9 @@
               
             
              
-
-              <script>
-                // Get the query parameters from the URL
-                const queryString = window.location.search;
-                const urlParams = new URLSearchParams(queryString);
-        
-                // Get the selectedValue parameter from the URL
-                const selectedValue = urlParams.get('entry.787769497');
-        
-                // Display the selected value in an external h2 tag
-                
-
-    // Set the variable text in the content div
-    document.getElementById('selectedValue').innerText = selectedValue;
-
-    function shareOnTwitter() {
-      var textToShare = encodeURIComponent("أنا صوتت لألعابي المفضلة في حفل جوائز الألعاب 2023 عبر الموقع الرسمي🔥\narabgameawards.com\n\nشارك بالتصويت لألعابك 🤩\n#حفل_الالعاب");
-      var twitterUrl = `https://twitter.com/intent/tweet?text=${textToShare}`;
-      window.open(twitterUrl, '_blank');
-    }
-
-
-            </script>
             
     
             
-            <div id="shareButtons">
-              <button id="twitterBtn" class="twitter-btn" onclick="shareOnTwitter()">شارك تصويتك على تويتر<ion-icon class="twitter-icon" name="logo-twitter"></ion-icon></button>
-            </div>
     
             </div>
           </section>
@@ -303,18 +285,69 @@
     
             <div class="section-wrapper">
     
-              <!-- 
-                - #ABOUT
-              -->
-      
-             
+              
+              
+  
+              <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg8F2grHPEmzf9hyphenhyphenLcZq9OKrNldLDX2B_DOkOBS6xz6Y0NddFmoKOaelnOje7QrADlZwFY2NFc_5-h_tV1QOpIFZLuwQbBlJ4yCxzzGC7nBsij1dj1oSxRiLRd0NUYRfQAHqjbpSCGK51sbMShin-lo7eAfVhoPzM6x5AxJzdEbERAfIb754LhZ5yhTeWm/s320/Fawzi%20Mesmar.png" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>فوزي مسمار
+                    </h2>
+                    <p>فوزي هو مصمم ومخرج ألعاب لأكثر من 20 سنة في الصناعة عمل خلالها مع DICE كرئيس قسم التصميم و King كمخرج للاستديو والانتاج وعمل أيضاً مع SEGA و Gameloft، والآن هو نائب رئيس القسم الإبداعي في Ubisoft. 
+                      أبرز أعماله تشمل سلسلة Battlefield و Persona و Candy Crush وهو كاتب أول كتاب عربي عن تصميم الألعاب (الخلّاب). 
+                      </p>
+                  </div>
+                </div>
 
-             <!-- 
-              - #TEAM
-            -->
-    
-          
-      
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtw_2wWLakr2EIEKxdi9npzawxA8W9ULompk93E8S6a7gBYq6xDgaKKbM3U2aGz4Xc8pe5dFHLx-VKEQvcjGyRHcLsL8zfCRuj_Qbq8BVarQZiHhUdaiBHR_lHC5nXW3_C-wzQj936AkYKjycRSNrTKIJnI1F727wEpkZ9Gs1rVshUIdRFqtmH4f-YOshe/s320/Nuha.jpeg" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>نهى القاضي
+                    </h2>
+                    <p>نهى هي مصممة سرد تبدع بتصميم أنظمة القصص والحوارات والتقدم السردي. تعمل حالياً في Respawn Entertainment ولكن خبرتها تمتد للعديد من العناوين الرائعة مثل Star Wars Jedi: Survivor و Far Cry 6 و Journey to Foundation. </p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq8o5q2sL1OPzCgydJaY9FCh47OcfOsDrW31eoZlonTpcOEVWz-4nJtwPKwdG-aYe1HjNAG-6qPeHZeGQ0dwS0fxZ-puPmquc4xAdVT9pMUvSK4s71mFrH8Fuw01SF8yStrdQcPI8vAH_nqCaoCjSAxxbRSDkEsvUGX5U0u3QU9xzny4Vvo5juHrFM-L1-/s320/AhmedSalamaMe.png" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>أحمد سلامة 
+                    </h2>
+                    <p>بدأ أحمد سلامة مسيرته بصناعة الألعاب قبل أكثر من عقد بالعمل على Horizon Zero Dawn و Killzone: Shadow Fall. يُبدع أحمد بتصميم تجارب وواجهات المستخدم. عمل لاحقاً على سلسلة Battlefield والآن هو مخرج محتوى في Ubisoft. 
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1L07GbG9idmwQrp61_6WRbchr4GR76vl0-pfrGrg6Huc7wLL0kpEMgDMb_bApsYhNgxbIySMhHmO2BM5zLTcG2QylGaVu0fN99yjrUfW_PMJnceFkGbEzN2CjClptWAOwDSvMEhkJTrC65Gohk22mzcaywWCSrWBikCalhyphenhyphenD0C3CnySRQBVXt-7RIJ6Eo/s320/ali%20farha.png" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>علي فرحة
+                    </h2>
+                    <p>علي هو منتج ألعاب خبير في استديو Star Stable Entertainment وعضو بمجلس إدارة منظمة FutureGames و The Game Assembly التي تنّمي من المطورين وتدعمهم ومتحدث بمؤتمرات الألعاب. بذات الوقت يدرّس علي طلاب ويساعدهم على الدخول إلى الصناعة.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl7AxgUEyEvnJa_PqUg0RVPyyXM8k7M-FdBQwZDDL2c-TJxZ9KINRhVsumTA229ucBJCSddMSI6NNHaXP3LXDPiwbscVzV_MVswyKx1ogIMpbUofun-WIisoEP-uaxsSSDmpMW_BOYu7wxlJ4VHo7shbaEv0g90h1YpPI_FRL5-vt4n5-Noe5HZHegL_jr/s320/Osama%20Dorias.jpg" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>أسامة دورياس
+                    </h2>
+                    <p>أسامة هو مصمم أسلوب لعب خبير يعمل حالياً في Brass Lion Entertainment ولكن خبرته تمتد لشركات عديدة حيثُ عَمِلَ سابقاً كمصمم محتوى خبير في Blizzard Entertainment على Overwatch وكمصمم ألعاب في WB Games على عدة عناوين من بينها Gotham Knights. بذات الوقت، أسامة يدرّس في جامعة Dawson College عن تصميم الألعاب لأكثر من عشرة أعوام.</p>
+                  </div>
+                </div>
+            
+                <!-- Card 2 -->
+               
+            
+                <!-- Add more cards as needed -->
+            
+              </div>
       
     
               

@@ -703,7 +703,7 @@ height: 60px;
   .navbar-link {
     color: white;
     font-size: 15px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-weight: var(--fw-500);
     transition: 0.6s ;
   }
@@ -1341,6 +1341,53 @@ height: 60px;
   }
 
 
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+
+  .hero-games-inds {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPGudjh5ppDrAdyf4NQj3ro2ODO93DIb-vHNY59HzkhjRdtB9gGVw4B5YE8ZaXHY_17NWbc9yIIkq50X1PTinvzerj7NgxdsF58_muSLddtdOKmBGjqELlCth5bnSlGj_2rJe80Vudm84F6W-cOtrgahgJuveYnOEE4OaLrB6eS1vtnd6UoORePD4D2zEy/s16000/Group%20393.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: var(--section-padding) 0;
+    height: 100vh;
+    max-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+
   .hero-games {
     background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnapm5GFHX6z-szs_E0TDZD-RFPabyM969ULx94B7gVnG6SmgLRv9Yve4peHnCxfzy-GpcnOc54JTRh-dyNOb_dsyDjBxd-oJ-0YALdsKAdm_l34ArqY2sLSPeknbsSCuxFWJZvT10TCDg4o9_nZJRSxnVsGzJ2qKpY_nD7wp70jPU4J7066kt4Hzpdu5o/s16000/2222.png") no-repeat;
     background-size: cover;
@@ -1486,6 +1533,8 @@ height: 60px;
     touch-action: manipulation;
     vertical-align: middle;
     width: 170px;
+    margin-right: 10px;
+  
   }
   
   .vote-btn:hover,
@@ -2591,7 +2640,7 @@ height: 60px;
 
   .gradient-text {
 
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .btn-watch{

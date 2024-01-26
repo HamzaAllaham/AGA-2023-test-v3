@@ -65,8 +65,6 @@
     
      <!----HEADER---->
 
-    
-
 
      <header class="header">
 
@@ -103,7 +101,7 @@
               <a  href="indexGaming-ar.html#hero" class="navbar-link">الرئيسية</a>
             </li>
 
-          
+           
   
             
             
@@ -150,7 +148,7 @@
 
 
             <li>
-              <a  href="confirmed-vote.html" class="navbar-link-ar">English </a>             </a>
+              <a  href="industry.html" class="navbar-link-ar">English </a>             </a>
             </li>
   
   
@@ -222,6 +220,16 @@
 
 
 
+    <script type="text/javascript">
+
+      window.addEventListener("scroll", function(){
+  
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+  
+  
+    </script>
 
 
       <main>
@@ -237,13 +245,13 @@
             - #HOME
           -->
     
-          <section class="hero-games" id="hero">
+          <section class="hero-games-inds" id="hero">
             <div class="container">
 
 
 
 
-                <p class="hero-subtitle">تم الإرسال بنجاح</p>
+                <p class="hero-subtitle"></p>
     
               <h1 class="h1 hero-title gradient-text"> &#160</h1>
 
@@ -257,35 +265,9 @@
               
             
              
-
-              <script>
-                // Get the query parameters from the URL
-                const queryString = window.location.search;
-                const urlParams = new URLSearchParams(queryString);
-        
-                // Get the selectedValue parameter from the URL
-                const selectedValue = urlParams.get('entry.787769497');
-        
-                // Display the selected value in an external h2 tag
-                
-
-    // Set the variable text in the content div
-    document.getElementById('selectedValue').innerText = selectedValue;
-
-    function shareOnTwitter() {
-      var textToShare = encodeURIComponent("أنا صوتت لألعابي المفضلة في حفل جوائز الألعاب 2023 عبر الموقع الرسمي🔥\narabgameawards.com\n\nشارك بالتصويت لألعابك 🤩\n#حفل_الالعاب");
-      var twitterUrl = `https://twitter.com/intent/tweet?text=${textToShare}`;
-      window.open(twitterUrl, '_blank');
-    }
-
-
-            </script>
             
     
             
-            <div id="shareButtons">
-              <button id="twitterBtn" class="twitter-btn" onclick="shareOnTwitter()">شارك تصويتك على تويتر<ion-icon class="twitter-icon" name="logo-twitter"></ion-icon></button>
-            </div>
     
             </div>
           </section>

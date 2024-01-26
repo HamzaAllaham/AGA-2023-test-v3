@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="حفل جوائز الألعاب العربي هو محفل لتكريم ألعاب الفيديو في الوطن العربي، لتمثيل ثقافة المجتمع العربي والاحتفال بأفضل ألعاب السنة على نطاق عالمي"/>
+    <meta name="description" content="Arab Game Awards (AGA) is the biggest ceremony to celebrate video games in the Middle East and North Africa. The ceremony is dedicated to the Arab community, to represent and celebrate the local gaming culture on a global scale."/>
     <title>Arab Game Awards - Jury</title>
 
 
@@ -20,7 +20,7 @@
 
      <!----CSS---->
 
-     <link rel="stylesheet" href="assets/css/styleGaming-ar.css">
+     <link rel="stylesheet" href="assets/css/styleGaming.css">
 
 
 
@@ -65,8 +65,7 @@
     
      <!----HEADER---->
 
-    
-
+     
 
      <header class="header">
 
@@ -77,7 +76,7 @@
   
       <div class="container">
   
-        <a href="indexGaming-ar.html" class="nav__logo">
+        <a href="indexGaming.html" class="nav__logo">
           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4foc266Iv1Ja7tR4WRA8JKhdAvqLnzO3EcVt5xM_FVm4WpyJIlUIDZQHeEvZ5BKWh3A51Yrsg2NNMSUdt4sMCAxFtsHk-VI2AvEpNzrdbbhGP4oYzuufkczy7mOgpzaWVy8pjenwNegHapn8wn7Vh1aYI7VuU4_Nzn6yMJ9h8BcCvyyL9tJB0DL1uiNAD/s1600/yellow-logo.png" alt="">
         </a>
   
@@ -100,10 +99,10 @@
           <ul class="navbar-list">
   
             <li>
-              <a  href="indexGaming-ar.html#hero" class="navbar-link">الرئيسية</a>
+              <a  href="indexGaming.html" class="navbar-link">Home</a>
             </li>
 
-          
+           
   
             
             
@@ -122,10 +121,10 @@
           </script>
 
             <select id="dropdown-header" class="dropdown-header">
-              <option value="0" selected disabled>الألعاب الفائزة</option>
-              <option value="1" data-url="gamesAr2022.html">2022</option>
-              <option value="2" data-url="gamesAr.html">2021</option>
-              <option value="3" data-url="gamesAr2020.html">2020</option>
+              <option value="0" selected disabled>WINNERS</option>
+              <option value="1" data-url="games2022.html">2022</option>
+              <option value="2" data-url="games.html">2021</option>
+              <option value="3" data-url="games2020.html">2020</option>
             
             </select>
             <i class="fa fa-chevron-down"></i>
@@ -134,23 +133,23 @@
           
   
             <li>
-              <a  href="jury-ar.html" class="navbar-link">لجنة التحكيم</a>
+              <a  href="jury.html" class="navbar-link">Jury</a>
             </li>
 
             <li>
-              <a  href="industry-ar.html" class="navbar-link">أسطورة الصناعة</a>
+              <a  href="industry.html" class="navbar-link">Industry Legend</a>
             </li>
             <li>
-              <a  href="dev-ar.html" class="navbar-link">أبرز المطورين العرب✨</a>
+              <a  href="dev.html" class="navbar-link">Arab Dev Spotlight✨</a>
             </li>
   
             <li>
-              <a  href="indexGaming-ar.html#contactus" class="navbar-link">تواصل معنا</a>
+              <a  href="indexGaming.html#contactus" class="navbar-link">Contact Us</a>
             </li>
 
 
             <li>
-              <a  href="confirmed-vote.html" class="navbar-link-ar">English </a>             </a>
+              <a  href="dev-ar.html" class="navbar-link-ar">العربية</a>             </a>
             </li>
   
   
@@ -221,6 +220,20 @@
     </header>
 
 
+    
+  <script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+
+
+  </script>
+
+
+
 
 
 
@@ -243,7 +256,7 @@
 
 
 
-                <p class="hero-subtitle">تم الإرسال بنجاح</p>
+                <p class="hero-subtitle">Arab Dev Spotlight ✨</p>
     
               <h1 class="h1 hero-title gradient-text"> &#160</h1>
 
@@ -257,35 +270,9 @@
               
             
              
-
-              <script>
-                // Get the query parameters from the URL
-                const queryString = window.location.search;
-                const urlParams = new URLSearchParams(queryString);
-        
-                // Get the selectedValue parameter from the URL
-                const selectedValue = urlParams.get('entry.787769497');
-        
-                // Display the selected value in an external h2 tag
-                
-
-    // Set the variable text in the content div
-    document.getElementById('selectedValue').innerText = selectedValue;
-
-    function shareOnTwitter() {
-      var textToShare = encodeURIComponent("أنا صوتت لألعابي المفضلة في حفل جوائز الألعاب 2023 عبر الموقع الرسمي🔥\narabgameawards.com\n\nشارك بالتصويت لألعابك 🤩\n#حفل_الالعاب");
-      var twitterUrl = `https://twitter.com/intent/tweet?text=${textToShare}`;
-      window.open(twitterUrl, '_blank');
-    }
-
-
-            </script>
             
     
             
-            <div id="shareButtons">
-              <button id="twitterBtn" class="twitter-btn" onclick="shareOnTwitter()">شارك تصويتك على تويتر<ion-icon class="twitter-icon" name="logo-twitter"></ion-icon></button>
-            </div>
     
             </div>
           </section>
@@ -303,18 +290,61 @@
     
             <div class="section-wrapper">
     
-              <!-- 
-                - #ABOUT
-              -->
-      
-             
+              
+              
+  
+              <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg8F2grHPEmzf9hyphenhyphenLcZq9OKrNldLDX2B_DOkOBS6xz6Y0NddFmoKOaelnOje7QrADlZwFY2NFc_5-h_tV1QOpIFZLuwQbBlJ4yCxzzGC7nBsij1dj1oSxRiLRd0NUYRfQAHqjbpSCGK51sbMShin-lo7eAfVhoPzM6x5AxJzdEbERAfIb754LhZ5yhTeWm/s320/Fawzi%20Mesmar.png" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>Fawzi Mesmar                    </h2>
+                   <p>Fawzi is a game designer and director with over 20 years in the industry, working with DICE as Head of Design, King as Studio and Production Director, in addition to SEGA and Gameloft. Now, he is the Vice President of Creative at Ubisoft. His most notable works include Battlefield, Persona, Candy Crush, and he is the author of the first Arabic book on the art of game design. He is also a board member in FutureGames and Bright Gambit.</p>
+                  </div>
+                </div>
 
-             <!-- 
-              - #TEAM
-            -->
-    
-          
-      
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtw_2wWLakr2EIEKxdi9npzawxA8W9ULompk93E8S6a7gBYq6xDgaKKbM3U2aGz4Xc8pe5dFHLx-VKEQvcjGyRHcLsL8zfCRuj_Qbq8BVarQZiHhUdaiBHR_lHC5nXW3_C-wzQj936AkYKjycRSNrTKIJnI1F727wEpkZ9Gs1rVshUIdRFqtmH4f-YOshe/s320/Nuha.jpeg" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>Nuha Alkadi                    </h2>
+                   <p>Nuha is an outstanding Narrative Designer specializing in designing narrative systems, dialogue mechanics, mission flow, and story progression. She currently works at Respawn Entertainment, with years of experience in the industry spanning across various titles such as Star Wars Jedi: Survivor, Far Cry 6, and Journey to Foundation. </p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq8o5q2sL1OPzCgydJaY9FCh47OcfOsDrW31eoZlonTpcOEVWz-4nJtwPKwdG-aYe1HjNAG-6qPeHZeGQ0dwS0fxZ-puPmquc4xAdVT9pMUvSK4s71mFrH8Fuw01SF8yStrdQcPI8vAH_nqCaoCjSAxxbRSDkEsvUGX5U0u3QU9xzny4Vvo5juHrFM-L1-/s320/AhmedSalamaMe.png" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>Ahmed Salama
+                    </h2>
+                    <p>Ahmed started his journey in the games industry more than a decade ago and worked on critically acclaimed titles like Horizon Zero Dawn, Killzone: Shadow Fall, and Battlefield series. Currently, he is Content Director at Ubisoft. Ahmed specializes in user experiences and interfaces, in addition to being a public speaker in various game conferences. </p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1L07GbG9idmwQrp61_6WRbchr4GR76vl0-pfrGrg6Huc7wLL0kpEMgDMb_bApsYhNgxbIySMhHmO2BM5zLTcG2QylGaVu0fN99yjrUfW_PMJnceFkGbEzN2CjClptWAOwDSvMEhkJTrC65Gohk22mzcaywWCSrWBikCalhyphenhyphenD0C3CnySRQBVXt-7RIJ6Eo/s320/ali%20farha.png" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>Ali Farha                    </h2>
+                    <p>Ali is a Senior Game Producer at Star Stable Entertainment, a board member of FutureGames and The Game Assembly, which supports and grows game developers. At the same time, Ali is a public speaker at various conferences, and a mentor, where he assists students in entering the games industry.</p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl7AxgUEyEvnJa_PqUg0RVPyyXM8k7M-FdBQwZDDL2c-TJxZ9KINRhVsumTA229ucBJCSddMSI6NNHaXP3LXDPiwbscVzV_MVswyKx1ogIMpbUofun-WIisoEP-uaxsSSDmpMW_BOYu7wxlJ4VHo7shbaEv0g90h1YpPI_FRL5-vt4n5-Noe5HZHegL_jr/s320/Osama%20Dorias.jpg" alt="Card Image 1">
+                  <div class="card-content">
+                    <h2>Osama Dorias                    </h2>
+                  <p>Osama is a Lead Gameplay Designer working currently at Brass Lion Entertainment, but his experience extends to many companies. Previously he was Lead Content Designer at Blizzard Entertainment working on Overwatch, Senior Game Designer at WB Games, working on AAA titles including Gotham Knights. Furthermore, Osama has been teaching game design at Dawson College for more than 10 years. </p>
+                  </div>
+                </div>
+            
+                <!-- Card 2 -->
+               
+            
+                <!-- Add more cards as needed -->
+            
+              </div>
       
     
               
@@ -466,6 +496,7 @@
         </div>
     
       </footer>
+
 
 
 
